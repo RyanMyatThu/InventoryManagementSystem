@@ -1,0 +1,48 @@
+﻿
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price (MMK) </th>
+            <th></th>
+   
+        </tr>
+    </thead>
+    <tbody>
+        @if(inventories is not null && inventories.Count > 0)
+        {
+            foreach(var item in inventories)
+            {
+                <InventoryListItemComponent Item="item" OnProductDelete="ReloadData" OnProductEdit="OnProductEdit"></InventoryListItemComponent>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public List<Inventory>? inventories { get; set; }
+
+    [Parameter]
+    public EventCallback OnProductDelete { get; set; }
+
+    [Parameter]
+    public EventCallback<Inventory> OnProductEdit { get; set; }
+
+    private Inventory? currentEditProduct;
+
+
+    private async Task ReloadData()
+    {
+        await OnProductDelete.InvokeAsync();
+    }
+
+
+
+
+
+    
+
+  
+
+}

@@ -1,0 +1,31 @@
+﻿<nav class="bg-dark text-white vh-100 position-fixed" id="sidebarMenu" style="width: 250px;">
+    <div class="d-flex flex-column p-3 h-100">
+        <a href="#" class="navbar-brand mb-3 text-white">IMS</a>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item mb-1">
+                <NavLink class="nav-link text-white gap-2 d-flex align-items-center" href="" Match="NavLinkMatch.All">
+                    <i class=" bi-house-door-fill "></i>
+                    <span>Home</span>
+                </NavLink>
+            </li>
+            <li class="nav-item mb-1">
+                <NavLink class="nav-link text-white gap-2 d-flex align-items-center" href="customers">
+                    <i class=" bi-people-fill"></i>
+                    <span>Customers</span>
+                </NavLink>
+            </li>
+            <li class="nav-item mb-1">
+                <NavLink class="nav-link text-white gap-2 d-flex align-items-center" href="inventories">
+                    <i class=" bi-box-seam-fill "></i>
+                    <span>Inventories</span>
+                </NavLink>
+            </li>
+        </ul>
+
+        <button class="btn btn-outline-light d-lg-none mt-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle sidebar">
+            Toggle Menu
+        </button>
+    </div>
+</nav>

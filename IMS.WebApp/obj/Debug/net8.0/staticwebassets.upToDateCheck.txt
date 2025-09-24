@@ -1,0 +1,5 @@
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.bundle.min.js
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\favicon.png
+wwwroot\js\interop.js

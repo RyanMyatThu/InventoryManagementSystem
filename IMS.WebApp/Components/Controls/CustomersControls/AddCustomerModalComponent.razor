@@ -1,0 +1,135 @@
+﻿@using IMS.UseCases.CustomerPrices.Interfaces
+
+@if (inventories != null) { 
+<div class="modal fade" id="AddCustomerModal" tabindex="-1" aria-labelledby="AddCustomerModalCenterTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="AddCustomerModal">Add a customer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="mb-3">
+                    <label for="customerNameInput" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="customerNameInput" placeholder="Enter customer name" @bind="customerName" />
+                </div>
+                <div class="mb-3">
+                    <label for="phoneInput" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phoneInput" placeholder="Enter phone number" @bind="phone" />
+                </div>
+                    <div class="mb-3">
+                        <label for="AddressInput" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="AddressInput" placeholder="Enter Customer Address" @bind="address" />
+                    </div>
+                <div class="mb-3">
+                    <label class="form-label">Select Items</label>
+                    <div class="form-check">
+                        @foreach (var item in inventories) 
+                        {
+                            <div>
+                                <input type="checkbox" class="form-check-input"
+                                       id="item-@item.InventoryId"
+                                       value="@item.InventoryId"
+                                           @onchange='(e) => ToggleItem(item.InventoryId, e.Value.ToString() == "True")' />
+
+                                <label class="form-check-label" for="item-@item.InventoryId">
+                                    @item.InventoryName
+                                </label>
+                            </div>
+                        }
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button id="close-add-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="HandleAddAsync">Add Customer</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+
+
+
+    @code {
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] public IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase { get; set; } = default!;
+    [Inject] public IAddCustomerUseCase AddCustomerUseCase { get; set; } = default!;
+    [Inject] public IAddCustomerPriceUseCase AddCustomerPriceUseCase { get; set; } = default!;
+    [Parameter]
+    public EventCallback OnCustomerAdded { get; set; }
+
+    [Parameter]
+    public EventCallback OpenToast { get; set; }
+
+    [Parameter]
+    public EventCallback OpenErrorToast { get; set; }
+
+    private string customerName { get; set; } = string.Empty;
+    private string phone { get; set; } = string.Empty;
+    private string address { get; set; } = string.Empty;
+    private string alertMessage = string.Empty;
+    private List<Inventory>? inventories;
+    private List<int> selectedItems = new();
+    private List<CustomerPrice> customerPrices = new();
+    protected override async Task OnInitializedAsync()
+    {
+        inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
+    }
+    private void ToggleItem(int inventoryId, bool isChecked)
+    {
+
+        if (isChecked){
+            selectedItems.Add(inventoryId);
+        }
+        else
+            selectedItems.Remove(inventoryId);
+    }
+    private async Task HandleAddAsync()
+
+    {
+
+        Console.WriteLine(selectedItems.Count());
+        if (string.IsNullOrWhiteSpace(customerName) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(address) || selectedItems.Count() == 0)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Customer name, Phone number or Address cannot be empty (If you don't wish to add address put '-')");
+            return;
+        }
+
+
+        Customer newCustomer = new Customer()
+            {
+                CustomerName = customerName,
+                Phone = phone,
+                Address = address,
+                TotalItems = selectedItems.Count()
+            };
+
+        int id = await AddCustomerUseCase.ExecuteAsync(newCustomer);
+        foreach (var item in selectedItems)
+        {
+            customerPrices.Add(new CustomerPrice() { CustomerId = id, InventoryId = item, SellPrice = 0 });
+        }
+
+        int res = await AddCustomerPriceUseCase.ExecuteAsync(customerPrices);
+
+
+        if (res >= 0)
+        {
+            customerName = string.Empty;
+            phone = string.Empty;
+            address = string.Empty;
+            
+            await OnCustomerAdded.InvokeAsync();
+            await OpenToast.InvokeAsync();
+        }
+        else
+        {
+            await OpenErrorToast.InvokeAsync();
+        }
+    } 
+    }
+    }
+    
+    
+

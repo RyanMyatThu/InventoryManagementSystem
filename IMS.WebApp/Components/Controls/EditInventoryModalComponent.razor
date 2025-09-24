@@ -1,0 +1,71 @@
+﻿@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+
+<div class="modal fade" id="EditInventoryModal" tabindex="-1" aria-labelledby="EditInventoryModalCenterTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="EditInventoryModalCenterTitle">Edit a product</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="editInventoryNameInput" class="form-label">Inventory Name</label>
+                    <input type="text" class="form-control" id="editInventoryNameInput"
+                           @bind="inventoryName" placeholder="Enter inventory name" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="editPriceInput" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="editPriceInput"
+                           @bind="price" placeholder="Enter price" step="0.01" min="0" />
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button id="close-edit-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="HandleEdit">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Inject] IUpdateInventoryUseCase UpdateInventoryUseCase { get; set; } = default!;
+
+    [Parameter]
+    public string? inventoryName { get; set; }
+    [Parameter]
+    public decimal price { get; set; }
+    [Parameter]
+    public int id { get; set; }
+    [Parameter]
+    public EventCallback OnSave { get; set; }
+    [Parameter]
+    public EventCallback OpenToast { get; set; }
+    [Parameter]
+    public EventCallback OpenErrorToast { get; set; }
+
+    private async Task HandleEdit()
+    {
+        Inventory updatedInventory = new Inventory()
+        {
+            InventoryId = id,
+            InventoryName = inventoryName ?? string.Empty,
+            Price = price
+        };
+        Console.Write(updatedInventory);
+
+        var res = await UpdateInventoryUseCase.ExecuteAsync(updatedInventory);
+        if (res > 0)
+        {
+            await OnSave.InvokeAsync();
+            await OpenToast.InvokeAsync();
+        } else
+        {
+            await OpenErrorToast.InvokeAsync();
+        }
+
+    }
+
+}

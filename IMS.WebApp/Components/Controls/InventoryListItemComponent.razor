@@ -1,0 +1,58 @@
+﻿@if(this.Item is not null){
+    <tr>
+    <td>@Item.InventoryName</td>
+    <td>@Item.Price</td>
+    <td>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#EditInventoryModal" @onclick=" async () => {
+                await OnProductEdit.InvokeAsync(Item);
+
+            }">
+                <i class="bi bi-pencil"></i>
+        </button>
+            <button type="button" class="btn btn-danger" @onclick="HandleDelete">
+                Delete
+            </button>
+    </td>
+    
+</tr>
+}
+
+
+
+@code {
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] IDeleteInventoryUseCase deleteInventoryUseCase { get; set; } = default!;
+
+
+    [Parameter]
+    public Inventory? Item { get; set; }
+
+    [Parameter]
+    public EventCallback OnProductDelete { get; set; }
+
+    [Parameter]
+    public EventCallback<Inventory> OnProductEdit { get; set; }
+
+    Inventory? currentEditItem;
+
+    bool showEditModal;
+
+    private async Task HandleDelete()
+    {
+        if (Item is not null)
+        {
+            await deleteInventoryUseCase.ExecuteAsync(Item.InventoryId);
+
+            await OnProductDelete.InvokeAsync();
+            await JSRuntime.InvokeVoidAsync("showDeleteSuccessful");
+        }
+
+    }
+
+
+
+
+   
+
+
+}

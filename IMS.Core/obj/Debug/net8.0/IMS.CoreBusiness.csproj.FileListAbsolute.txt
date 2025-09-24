@@ -1,0 +1,12 @@
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\bin\Debug\net8.0\IMS.CoreBusiness.deps.json
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\bin\Debug\net8.0\IMS.CoreBusiness.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.AssemblyInfoInputs.cache
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.AssemblyInfo.cs
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.csproj.CoreCompileInputs.cache
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.sourcelink.json
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\refint\IMS.CoreBusiness.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.pdb
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Core\obj\Debug\net8.0\ref\IMS.CoreBusiness.dll

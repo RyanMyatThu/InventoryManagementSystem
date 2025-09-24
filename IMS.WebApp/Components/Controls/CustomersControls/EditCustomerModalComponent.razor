@@ -1,0 +1,182 @@
+﻿@using IMS.UseCases.CustomerPrices.Interfaces
+
+
+    <div class="modal fade" id="EditCustomerModal" tabindex="-1" aria-labelledby="EditCustomerModalCenterTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="EditCustomerModal">Edit a customer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="customerNameInput" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="customerNameInput" placeholder="Enter customer name" @bind="customerName" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneInput" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="phoneInput" placeholder="Enter phone number" @bind="phone" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="AddressInput" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="AddressInput" placeholder="Enter Customer Address" @bind="address" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Assign Sell Price</label>
+                        
+                </div>
+
+                <div class="mb-3">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Sell Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (customerPrices != null)
+                            {
+                                @foreach (var cp in customerPrices)
+                                {
+                                    <tr>
+                                        <td>@cp.Inventory?.InventoryName</td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm"
+                                                   @bind="cp.SellPrice" />
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-danger"
+                                                    >
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Add New Item</label>
+                    <div class="d-flex">
+                        <select class="form-select me-2" @bind="newItemId">
+                            <option value="">-- Select Item --</option>
+                            @if (inventories != null && customerPrices != null)
+                            {
+                                @foreach (var item in inventories)
+                                {
+                                    if (!customerPrices.Any(cp => cp.InventoryId == item.InventoryId))
+                                    {
+                                        <option value="@item.InventoryId">@item.InventoryName</option>
+                                    }
+                                }
+                            }
+                        </select>
+
+
+                        <button type="button" class="btn btn-sm btn-success">
+                            Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+         
+                    <button id="close-edit-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" @onclick="SaveCustomerAsync">Update Customer</button>
+                    <button type="button" class="btn btn-danger">Delete Customer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] IEditCustomerUseCase EditCustomerUseCase { get; set; } = default!;
+    [Inject] IEditCustomerPriceUseCase EditCustomerPriceUseCase { get; set; } = default!;
+
+    [Parameter]
+    public int customerId { get; set; } 
+
+    [Parameter]
+    public string? customerName { get; set; }
+
+    [Parameter]
+    public string? phone { get; set; }
+
+    [Parameter]
+    public string? address { get; set; }
+
+    [Parameter]
+    public ICollection<CustomerPrice> customerPrices { get; set; } = default!;
+
+    [Parameter]
+    public EventCallback OnCustomerEdited { get; set; }
+
+    [Parameter]
+    public EventCallback OpenToast { get; set; }
+
+    [Parameter]
+    public List<Inventory>? inventories { get; set; }
+
+    [Parameter]
+    public EventCallback OpenErrorToast { get; set; }
+
+    private int newItemId = 0;
+
+    private async Task SaveCustomerAsync()
+    {
+        if (string.IsNullOrWhiteSpace(customerName) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(address))
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Customer name, Phone number or Address cannot be empty (If you don't wish to add address put '-')");
+            return;
+        }
+        if (customerPrices.Any(cp => cp.SellPrice < 0))
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Sell Price(s) cannot be negative");
+        }
+        Customer updatedCustomer = new Customer()
+        {
+            CustomerId = customerId,
+            CustomerName = customerName,
+            Address = address,
+            Phone = phone
+        };
+        int res = await EditCustomerUseCase.ExecuteAsync(updatedCustomer);
+        if(res < 0)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Cannot update customer!");
+            return;
+        }
+
+        res = await EditCustomerPriceUseCase.ExecuteAsync();
+
+        if (res >= 0)
+        {
+            customerName = string.Empty;
+            phone = string.Empty;
+            address = string.Empty;
+
+            await OnCustomerEdited.InvokeAsync();
+            await OpenToast.InvokeAsync();
+        }
+        else
+        {
+            await OpenErrorToast.InvokeAsync();
+        }
+
+
+    }
+
+}
+    
+
+
+

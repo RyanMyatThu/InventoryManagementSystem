@@ -1,0 +1,77 @@
+﻿@page "/inventories"
+@inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase;
+@rendermode InteractiveServer
+
+<PageTitle>Inventories</PageTitle>
+<h3>Inventory List</h3>
+
+
+<InventoryListComponent inventories="inventories" OnProductDelete="LoadList" OnProductEdit="HandleEdit"></InventoryListComponent>
+<button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#AddInventoryModal"><i class="bi bi-plus-lg"></i>   Add</button>
+
+<AddInventoryModalComponent OnProductAdded="LoadList" OpenToast="AddProduct" OpenErrorToast="ErrorToast"></AddInventoryModalComponent>
+
+    <EditInventoryModalComponent InventoryName="@(!string.IsNullOrEmpty(product?.InventoryName) ? product.InventoryName.Trim() : "")"
+                                 Price="@(product?.Price != null ? product.Price : 0)"
+                                 Id="@(product?.InventoryId != null ? product.InventoryId : 0)"
+                                 OnSave="LoadList"
+                                 OpenToast="EditProduct">
+    </EditInventoryModalComponent>
+
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">User Action Notification</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toast-body">
+        </div>
+    </div>
+</div>
+
+@code {
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+
+    private List<Inventory>? inventories;
+    private bool isEditing;
+
+    private Inventory? product;
+
+    protected override async Task OnInitializedAsync()
+    {
+        inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
+    }
+
+    private async Task LoadList()
+    {
+        inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
+        StateHasChanged();
+    }
+
+    private void HandleEdit(Inventory currentEditProduct)
+    {
+        product = currentEditProduct;
+        isEditing = true;
+    }
+
+    private async Task AddProduct()
+    {
+        await JSRuntime.InvokeVoidAsync("showAddSuccessful");
+    }
+
+    private async Task EditProduct()
+    {
+        await JSRuntime.InvokeVoidAsync("showEditSuccessful");
+    }
+
+    private async Task DeleteProduct()
+    {
+        await JSRuntime.InvokeVoidAsync("showDeleteSuccessful");
+    }
+
+    private async Task ErrorToast()
+    {
+        await JSRuntime.InvokeVoidAsync("showErrorToast");
+    }
+
+}

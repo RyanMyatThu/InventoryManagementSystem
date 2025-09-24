@@ -1,0 +1,86 @@
+﻿@inject IJSRuntime JsRuntime
+<div class="modal fade" id="AddInventoryModal" tabindex="-1" aria-labelledby="AddInventoryModalCenterTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="AddInventoryModalCenterTitle">Add a product</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="mb-3">
+                    <label for="inventoryNameInput" class="form-label">Inventory Name</label>
+                    <input type="text" class="form-control" id="inventoryNameInput" placeholder="Enter inventory name" @bind="inventoryName" />
+                </div>
+                <div class="mb-3">
+                    <label for="priceInput" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="priceInput" placeholder="Enter price" step="0.01" min="0"  @bind="price"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="close-add-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="HandleAddAsync">Add Product</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Inject] IJSRuntime JSInterop { get; set; } = default!;
+    [Inject] public IAddInventoryUseCase AddInventoryUseCase { get; set; } = default!;
+    [Inject] public IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase { get; set; } = default!;
+
+    [Parameter] 
+    public EventCallback OnProductAdded { get; set; }
+
+    [Parameter]
+    public EventCallback OpenToast { get; set; }
+
+    [Parameter]
+    public EventCallback OpenErrorToast { get; set; }
+
+    private string inventoryName { get; set; } = string.Empty;
+    private decimal price { get; set; }
+    private string alertMessage = string.Empty;
+
+
+    private async Task HandleAddAsync()
+
+    {
+        Console.WriteLine("Add clicked!");
+
+        if (string.IsNullOrWhiteSpace(inventoryName))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Product name cannot be empty");
+            return;
+        }
+        if (price < 0)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Price cannot be negative");
+            return;
+        }
+
+        Inventory newProduct = new Inventory()
+        {
+            InventoryName = inventoryName,
+            Price = price
+
+        };
+
+        var res = await AddInventoryUseCase.ExecuteAsync(newProduct);
+        if (res > 0)
+        {
+            inventoryName = string.Empty;
+            price = 0;
+            await OnProductAdded.InvokeAsync();
+            await OpenToast.InvokeAsync();
+        } else
+        {
+            await OpenErrorToast.InvokeAsync();
+        }
+
+    }
+
+
+}

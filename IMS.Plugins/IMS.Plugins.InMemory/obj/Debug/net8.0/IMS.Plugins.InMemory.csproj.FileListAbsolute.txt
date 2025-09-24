@@ -1,0 +1,17 @@
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.deps.json
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.pdb
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.CoreBusiness.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.UseCases.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.UseCases.pdb
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.AssemblyReference.cache
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.AssemblyInfoInputs.cache
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.AssemblyInfo.cs
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plug.DF2EEC9E.Up2Date
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\refint\IMS.Plugins.InMemory.dll
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.pdb
+C:\Users\ryanm\Desktop\Coding\MyProjs\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\ref\IMS.Plugins.InMemory.dll
