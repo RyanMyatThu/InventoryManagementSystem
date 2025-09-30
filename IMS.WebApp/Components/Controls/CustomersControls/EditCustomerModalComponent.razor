@@ -49,7 +49,7 @@
                                         </td>
                                         <td>
                                             <button type="button" class="btn btn-sm btn-danger"
-                                                    >
+                                                    @onclick="() => RemoveItem(cp.CustomerId, cp.InventoryId)">
                                                 <i class="bi bi-trash"></i>
                                             </button>
                                         </td>
@@ -78,7 +78,7 @@
                         </select>
 
 
-                        <button type="button" class="btn btn-sm btn-success">
+                        <button type="button" class="btn btn-sm btn-success" @onclick="() => AddItem(newItemId, customerId)">
                             Add
                         </button>
                     </div>
@@ -101,6 +101,10 @@
     [Inject] IJSRuntime JSRuntime { get; set; } = default!;
     [Inject] IEditCustomerUseCase EditCustomerUseCase { get; set; } = default!;
     [Inject] IEditCustomerPriceUseCase EditCustomerPriceUseCase { get; set; } = default!;
+    [Inject] IRemoveCustomerPriceUseCase RemoveCustomerPriceUseCase { get; set; } = default!;
+    [Inject] IGetCustomerByIdUseCase GetCustomerByIdUseCase { get; set; } = default!;
+    [Inject] IAddCustomerPriceItemUseCase AddCustomerPriceItemUseCase { get; set; } = default!;
+
 
     [Parameter]
     public int customerId { get; set; } 
@@ -130,6 +134,40 @@
     public EventCallback OpenErrorToast { get; set; }
 
     private int newItemId = 0;
+
+
+    private async Task RemoveItem(int customerId, int inventoryId)
+    {
+        var res = await RemoveCustomerPriceUseCase.ExecuteAsync(customerId, inventoryId);
+        if(res > 0)
+        {
+            var customer = await GetCustomerByIdUseCase.ExecuteAsync(customerId);
+            customerPrices = customer.CustomerPrices;
+            await OnCustomerEdited.InvokeAsync();
+            
+            StateHasChanged();
+
+        }
+
+    }
+
+    private async Task AddItem(int inventoryId, int customerId)
+    {
+        if(newItemId == 0)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Please choose an item from the list before adding!");
+            return;
+        }
+        var res = await AddCustomerPriceItemUseCase.ExecuteAsync(customerId, inventoryId);
+        if(res > 0)
+        {
+            var customer = await GetCustomerByIdUseCase.ExecuteAsync(customerId);
+            customerPrices = customer.CustomerPrices;
+            await OnCustomerEdited.InvokeAsync();
+
+            StateHasChanged();
+        }
+    }
 
     private async Task SaveCustomerAsync()
     {

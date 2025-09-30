@@ -40,6 +40,8 @@ builder.Services.AddTransient<IGetCustomerByIdUseCase, GetCustomerByIdUseCase>()
 builder.Services.AddTransient<IGetCustomerPriceItemsUseCase, GetCustomerPriceItemsUseCase>();
 builder.Services.AddTransient<IEditCustomerPriceUseCase, EditCustomerPriceUseCase>();
 builder.Services.AddTransient<IEditCustomerUseCase, EditCustomerUseCase>();
+builder.Services.AddTransient<IRemoveCustomerPriceUseCase, RemoveCustomerPriceUseCase>();
+builder.Services.AddTransient<IAddCustomerPriceItemUseCase, AddCustomerPriceItemUseCase>();
 
 var app = builder.Build();
 

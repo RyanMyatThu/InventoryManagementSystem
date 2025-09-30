@@ -43,5 +43,40 @@ namespace IMS.Plugins.EFCore
             int res = await _db.SaveChangesAsync();
             return res;
         }
+
+        public async Task<int> RemoveCustomerPriceAsync(int customerId, int inventoryId)
+        {
+            if (customerId == 0) throw new Exception("Customer Id cannot be 0");
+            if (inventoryId == 0) throw new Exception("Inventory Id cannot be 0");
+            var customer = await _db.Customers.FirstOrDefaultAsync(c => c.CustomerId == customerId);
+            if (customer == null) throw new Exception("Customer not found");
+
+            var cp = await _db.CustomerPrices.FirstOrDefaultAsync(cp => cp.CustomerId == customerId && cp.InventoryId == inventoryId);
+            if (cp == null) throw new Exception("Cannot find item to remove");
+             _db.Remove(cp);
+            customer.TotalItems--;
+            int res = await _db.SaveChangesAsync();
+            return res;
+        }
+
+        public async Task<int> AddCustomerPriceItemAsync(int customerId, int inventoryId)
+        {
+            if (customerId == 0) throw new Exception("Customer Id cannot be 0");
+            if (inventoryId == 0) throw new Exception("Inventory Id cannot be 0");
+
+            var customer = await _db.Customers.FirstOrDefaultAsync(c => c.CustomerId == customerId);
+            if (customer == null) throw new Exception("Customer not found");
+
+            CustomerPrice newCp = new CustomerPrice()
+            {
+                CustomerId = customerId,
+                InventoryId = inventoryId,
+                SellPrice = 0
+            };
+            await _db.AddAsync(newCp);
+            customer.TotalItems++;
+            return await _db.SaveChangesAsync();
+
+        }
     }
 }

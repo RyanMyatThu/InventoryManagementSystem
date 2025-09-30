@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ryanm\\Desktop\\Coding\\MyProjs\\IMS\\IMS.Core\\IMS.CoreBusiness.csproj": {}
+    "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\IMS.CoreBusiness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ryanm\\Desktop\\Coding\\MyProjs\\IMS\\IMS.Core\\IMS.CoreBusiness.csproj": {
+    "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\IMS.CoreBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ryanm\\Desktop\\Coding\\MyProjs\\IMS\\IMS.Core\\IMS.CoreBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\IMS.CoreBusiness.csproj",
         "projectName": "IMS.CoreBusiness",
-        "projectPath": "C:\\Users\\ryanm\\Desktop\\Coding\\MyProjs\\IMS\\IMS.Core\\IMS.CoreBusiness.csproj",
+        "projectPath": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\IMS.CoreBusiness.csproj",
         "packagesPath": "C:\\Users\\ryanm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ryanm\\Desktop\\Coding\\MyProjs\\IMS\\IMS.Core\\obj\\",
+        "outputPath": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
