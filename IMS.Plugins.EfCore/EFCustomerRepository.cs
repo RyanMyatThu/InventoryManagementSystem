@@ -74,5 +74,21 @@ namespace IMS.Plugins.EFCore
             var res = await _db.SaveChangesAsync();
             return res;
         }
+
+        public async Task<int> RemoveCustomerAsync(int customerId)
+        {
+            if(customerId <= 0)
+            {
+                throw new Exception("Invalid ID");
+            }
+
+            var customer = await _db.Customers.FirstOrDefaultAsync(x => x.CustomerId == customerId);
+            if (customer == null) {
+            
+                throw new Exception("Customer not found");
+            }
+            _db.Remove(customer);
+            return await _db.SaveChangesAsync();
+        }
     }
 }

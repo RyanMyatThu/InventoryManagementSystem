@@ -33,3 +33,4 @@ C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Plugins.EfCore\obj
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Plugins.EfCore\obj\Debug\net8.0\refint\IMS.Plugins.EFCore.dll
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Plugins.EfCore\obj\Debug\net8.0\IMS.Plugins.EFCore.pdb
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Plugins.EfCore\obj\Debug\net8.0\ref\IMS.Plugins.EFCore.dll
+C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Plugins.EfCore\obj\Debug\net8.0\IMS.Plugins.EFCore.sourcelink.json

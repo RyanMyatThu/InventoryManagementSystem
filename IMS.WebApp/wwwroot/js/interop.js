@@ -28,10 +28,15 @@ window.showEditSuccessful = () => {
 window.showDeleteSuccessful = () => {
     const toastLiveExample = document.getElementById('liveToast');
     const toastBody = document.getElementById('toast-body');
+    const btnElm = document.getElementById('close-edit-modal');
+
     if (toastLiveExample && toastBody) {
         toastBody.innerText = "🗑️ Delete successful!";
         const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
         toastBootstrap.show();
+        if (btnElm) {
+            btnElm.click();
+        }
     }
 };
 

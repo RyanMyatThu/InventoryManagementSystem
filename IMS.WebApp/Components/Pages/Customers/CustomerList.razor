@@ -99,7 +99,7 @@
         <AddCustomerModalComponent OnCustomerAdded="LoadList" OpenToast="AddCustomer" OpenErrorToast="ErrorToast"></AddCustomerModalComponent>
 
 
-        <EditCustomerModalComponent customerName="@(!string.IsNullOrEmpty(selectedCustomerName) ? selectedCustomerName.Trim() : "")" address="@(!string.IsNullOrEmpty(selectedCustomerAddress) ? selectedCustomerAddress.Trim() : "")" customerId="@(selectedCustomerId != 0 ? selectedCustomerId : 0)" phone="@(!string.IsNullOrEmpty(selectedCustomerPhone) ? selectedCustomerPhone.Trim() : "")" customerPrices="@customerPrices" inventories="@inventories" OpenToast="EditCustomer" OpenErrorToast="ErrorToast" OnCustomerEdited="LoadList"></EditCustomerModalComponent>
+        <EditCustomerModalComponent OpenDeletedToast="RemoveCustomer" customerName="@(!string.IsNullOrEmpty(selectedCustomerName) ? selectedCustomerName.Trim() : "")" address="@(!string.IsNullOrEmpty(selectedCustomerAddress) ? selectedCustomerAddress.Trim() : "")" customerId="@(selectedCustomerId != 0 ? selectedCustomerId : 0)" phone="@(!string.IsNullOrEmpty(selectedCustomerPhone) ? selectedCustomerPhone.Trim() : "")" customerPrices="@customerPrices" inventories="@inventories" OpenToast="EditCustomer" OpenErrorToast="ErrorToast" OnCustomerEdited="LoadList"></EditCustomerModalComponent>
         
     @if (customers.Count == 0)
     {
@@ -163,7 +163,7 @@
         selectedCustomerPhone = phone;
         selectedCustomerAddress = address;
         customerPrices = customerPricesList;
-    
+
     }
 
     private async Task AddCustomer()
@@ -180,6 +180,11 @@
     private async Task ErrorToast()
     {
         await JSRuntime.InvokeVoidAsync("showErrorToast");
+    }
+
+    private async Task RemoveCustomer()
+    {
+        await JSRuntime.InvokeVoidAsync("showDeleteSuccessful");
     }
 }
 

@@ -3,12 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efcustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efcustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\wwwroot\\js\\interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\wwwroot\\js\\interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\customerscontrols\\editcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\customerscontrols\\editcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customers\\removecustomerusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customers\\removecustomerusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customers\\interfaces\\iremovecustomerusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customers\\interfaces\\iremovecustomerusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\getcustomerpriceitemsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\getcustomerpriceitemsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\removecustomerpricesusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\removecustomerpricesusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\iremovecustomerpricesusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\iremovecustomerpricesusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efcustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efcustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\icustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\icustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\addcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +71,12 @@
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\removecustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\customerprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|solutionrelative:ims.core\\customerprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\icustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\icustomerpricerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\igetcustomerpriceitemsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\igetcustomerpriceitemsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customers\\viewcustomersbynameusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,16 +87,8 @@
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\ieditcustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\iaddcustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|solutionrelative:ims.core\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\iremovecustomerpriceusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,50 +110,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "interop.js",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
+              "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\js\\interop.js",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
+              "RelativeToolTip": "IMS.WebApp\\wwwroot\\js\\interop.js",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-01T07:44:47.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddCustomerPriceItemUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "RemoveCustomerUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T13:19:27.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T03:53:04.441Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IAddCustomerPriceItemUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "IRemoveCustomerUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T13:18:52.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T03:52:21.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CustomerPrice.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
-              "RelativeDocumentMoniker": "IMS.Core\\CustomerPrice.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
-              "RelativeToolTip": "IMS.Core\\CustomerPrice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T13:17:31.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T03:43:30.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetCustomerPriceItemsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T03:28:32.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
+              "RelativeToolTip": "IMS.WebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:05:29.675Z"
             },
             {
               "$type": "Document",
@@ -135,101 +193,69 @@
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
               "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
               "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAnwJAAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAOEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T11:49:39.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:49:39.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
-              "RelativeToolTip": "IMS.WebApp\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:05:29.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RemoveCustomerPriceUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:58:03.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EFCustomerPriceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:59:04.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IGetCustomerPriceItemsUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:57:26.673Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "CustomerList.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAGgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:11:14.16Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "RemoveCustomerPricesUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T03:26:00.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRemoveCustomerPricesUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T03:24:56.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EFCustomerRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
               "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
               "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:13:54.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T12:13:54.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ViewCustomersByNameUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "EFCustomerPriceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:16:23.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICustomerPriceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
-              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:59:44.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:59:04.014Z"
             },
             {
               "$type": "Document",
@@ -241,12 +267,95 @@
               "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:57:22.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:57:22.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
+              "Title": "IAddCustomerPriceItemUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:18:52.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RemoveCustomerPriceUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:58:03.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CustomerPrice.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
+              "RelativeDocumentMoniker": "IMS.Core\\CustomerPrice.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
+              "RelativeToolTip": "IMS.Core\\CustomerPrice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:17:31.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ICustomerPriceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
+              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:59:44.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddCustomerPriceItemUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:19:27.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IGetCustomerPriceItemsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:57:26.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ViewCustomersByNameUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:16:23.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Customer.cs",
               "RelativeDocumentMoniker": "IMS.Core\\Customer.cs",
@@ -254,25 +363,11 @@
               "RelativeToolTip": "IMS.Core\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:48:07.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:48:07.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CustomerList.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T12:11:14.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "IEditCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
@@ -280,12 +375,11 @@
               "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:57:25.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:57:25.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "IRemoveCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",
@@ -293,12 +387,11 @@
               "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:56:33.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:56:33.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "AddCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
@@ -306,12 +399,11 @@
               "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:57:27.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:57:27.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "AddCustomerModalComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
@@ -319,8 +411,7 @@
               "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T11:49:38.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T11:49:38.59Z"
             }
           ]
         }

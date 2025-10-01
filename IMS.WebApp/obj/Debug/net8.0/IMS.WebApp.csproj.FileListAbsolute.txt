@@ -187,3 +187,4 @@ C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\n
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.pdb
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.genruntimeconfig.cache
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\ref\IMS.WebApp.dll
+C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.sourcelink.json

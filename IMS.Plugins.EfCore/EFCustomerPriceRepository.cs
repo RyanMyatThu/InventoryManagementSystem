@@ -44,6 +44,15 @@ namespace IMS.Plugins.EFCore
             return res;
         }
 
+        public async Task<int> RemoveCustomerPricesAsync(IEnumerable<CustomerPrice> customerPrices)
+        {
+            if (customerPrices == null || !customerPrices.Any())
+                throw new ArgumentException("No customer prices provided");
+            _db.CustomerPrices.RemoveRange(customerPrices);
+            return await _db.SaveChangesAsync();
+
+        }
+
         public async Task<int> RemoveCustomerPriceAsync(int customerId, int inventoryId)
         {
             if (customerId == 0) throw new Exception("Customer Id cannot be 0");

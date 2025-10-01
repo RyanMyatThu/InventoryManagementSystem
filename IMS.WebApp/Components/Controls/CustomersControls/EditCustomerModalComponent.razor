@@ -88,7 +88,7 @@
          
                     <button id="close-edit-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" @onclick="SaveCustomerAsync">Update Customer</button>
-                    <button type="button" class="btn btn-danger">Delete Customer</button>
+                    <button type="button" class="btn btn-danger" @onclick="() => RemoveCustomer(customerId)">Delete Customer</button>
                 </div>
             </div>
         </div>
@@ -104,7 +104,9 @@
     [Inject] IRemoveCustomerPriceUseCase RemoveCustomerPriceUseCase { get; set; } = default!;
     [Inject] IGetCustomerByIdUseCase GetCustomerByIdUseCase { get; set; } = default!;
     [Inject] IAddCustomerPriceItemUseCase AddCustomerPriceItemUseCase { get; set; } = default!;
-
+    [Inject] IGetCustomerPriceItemsUseCase GetCustomerPriceItemsUseCase { get; set; } = default!;
+    [Inject] IRemoveCustomerPricesUseCase RemoveCustomerPricesUseCase { get; set; } = default!;
+    [Inject] IRemoveCustomerUseCase RemoveCustomerUseCase { get; set; } = default!;
 
     [Parameter]
     public int customerId { get; set; } 
@@ -128,6 +130,9 @@
     public EventCallback OpenToast { get; set; }
 
     [Parameter]
+    public EventCallback OpenDeletedToast { get; set; }
+
+    [Parameter]
     public List<Inventory>? inventories { get; set; }
 
     [Parameter]
@@ -135,6 +140,21 @@
 
     private int newItemId = 0;
 
+    private async Task RemoveCustomer(int customerId)
+    {
+        var items = await GetCustomerPriceItemsUseCase.ExecuteAsync(customerId);
+        var res = await RemoveCustomerPricesUseCase.ExecuteAsync(items);
+        if(res > 0)
+        {
+            res = await RemoveCustomerUseCase.ExecuteAsync(customerId);
+            if(res > 0)
+            {
+                await OpenDeletedToast.InvokeAsync();
+                await OnCustomerEdited.InvokeAsync();
+                StateHasChanged();
+            }
+        }
+    }
 
     private async Task RemoveItem(int customerId, int inventoryId)
     {

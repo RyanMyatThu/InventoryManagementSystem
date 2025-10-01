@@ -17,5 +17,7 @@ namespace IMS.UseCases.PluginInterfaces
         Task<int> UpdateCustomerAsync(Customer customer);
 
         Task<IEnumerable<(Inventory Inventory, decimal SellPrice)>> GetInventoriesByCustomerAsync(int customerId);
+        Task<int> RemoveCustomerAsync(int customerId);
+
     }
 }
