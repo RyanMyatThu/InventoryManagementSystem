@@ -31,6 +31,7 @@
                                 <input type="checkbox" class="form-check-input"
                                        id="item-@item.InventoryId"
                                        value="@item.InventoryId"
+                                           checked="@IsSelected(item.InventoryId)"
                                            @onchange='(e) => ToggleItem(item.InventoryId, e.Value.ToString() == "True")' />
 
                                 <label class="form-check-label" for="item-@item.InventoryId">
@@ -72,6 +73,8 @@
     private List<Inventory>? inventories;
     private List<int> selectedItems = new();
     private List<CustomerPrice> customerPrices = new();
+    private bool IsSelected(int id) => selectedItems.Contains(id);
+
     protected override async Task OnInitializedAsync()
     {
         inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
@@ -90,7 +93,7 @@
     {
 
         Console.WriteLine(selectedItems.Count());
-        if (string.IsNullOrWhiteSpace(customerName) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(address) || selectedItems.Count() == 0)
+        if (string.IsNullOrWhiteSpace(customerName) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(address))
         {
             await JSRuntime.InvokeVoidAsync("alert", "Customer name, Phone number or Address cannot be empty (If you don't wish to add address put '-')");
             return;
@@ -106,20 +109,36 @@
             };
 
         int id = await AddCustomerUseCase.ExecuteAsync(newCustomer);
-        foreach (var item in selectedItems)
+        if (selectedItems.Count > 0)
         {
-            customerPrices.Add(new CustomerPrice() { CustomerId = id, InventoryId = item, SellPrice = 0 });
-        }
+            foreach (var item in selectedItems)
+            {
+                customerPrices.Add(new CustomerPrice() { CustomerId = id, InventoryId = item, SellPrice = 0 });
+            }
 
-        int res = await AddCustomerPriceUseCase.ExecuteAsync(customerPrices);
+            int res = await AddCustomerPriceUseCase.ExecuteAsync(customerPrices);
 
 
-        if (res >= 0)
+            if (res >= 0)
+            {
+                customerName = string.Empty;
+                phone = string.Empty;
+                address = string.Empty;
+                selectedItems.Clear();
+
+                await OnCustomerAdded.InvokeAsync();
+                await OpenToast.InvokeAsync();
+            }
+            else
+            {
+                await OpenErrorToast.InvokeAsync();
+            }
+        } else if(id > 0)
         {
             customerName = string.Empty;
             phone = string.Empty;
             address = string.Empty;
-            
+            selectedItems.Clear();
             await OnCustomerAdded.InvokeAsync();
             await OpenToast.InvokeAsync();
         }

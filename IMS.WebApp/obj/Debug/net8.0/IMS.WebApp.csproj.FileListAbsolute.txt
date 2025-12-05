@@ -173,7 +173,6 @@ C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\n
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
-C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\scopedcss\bundle\IMS.WebApp.styles.css
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\scopedcss\projectbundle\IMS.WebApp.bundle.scp.css
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\staticwebassets.build.json
@@ -188,3 +187,5 @@ C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\n
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.genruntimeconfig.cache
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\ref\IMS.WebApp.dll
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.sourcelink.json
+C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\scopedcss\Components\Layout\SideBarMenu.razor.rz.scp.css
+C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\obj\Debug\net8.0\swae.build.ex.cache

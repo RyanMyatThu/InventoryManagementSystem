@@ -8,6 +8,10 @@ using IMS.UseCases.Customers.Interfaces;
 using IMS.UseCases.Inventories;
 using IMS.UseCases.Inventories.Interfaces;
 using IMS.UseCases.PluginInterfaces;
+using IMS.UseCases.Report;
+using IMS.UseCases.Report.Interfaces;
+using IMS.UseCases.Voucher;
+using IMS.UseCases.Voucher.Interfaces;
 using IMS.WebApp.Components;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -25,12 +29,15 @@ builder.Services.AddDbContext<IMSDbContext>(options =>
 builder.Services.AddScoped<ICustomerRepository, EFCustomerRepository>();
 builder.Services.AddScoped<IInventoryRepository, EFInventoryRepository>();
 builder.Services.AddScoped<ICustomerPriceRepository, EFCustomerPriceRepository>();
+builder.Services.AddScoped<IReportsRepository, EFReportsRepository>();
+builder.Services.AddScoped<IVouchersRepository, EFVouchersRepository>();
 
 builder.Services.AddTransient<IViewInventoriesByNameUseCase, ViewInventoriesByNameUseCase>();
 builder.Services.AddTransient<IGetInventoryByIdUseCase, GetInventoryByIdUseCase>();
 builder.Services.AddTransient<IAddInventoryUseCase, AddInventoryUseCase>();
 builder.Services.AddTransient<IDeleteInventoryUseCase, DeleteInventoryUseCase>();
 builder.Services.AddTransient<IUpdateInventoryUseCase, UpdateInventoryUseCase>();
+builder.Services.AddTransient<ICheckForInventoryItemUseCase, CheckForInventoryItemUseCase>();
 
 builder.Services.AddTransient<IGetCustomerAndInventoryUseCase, GetCustomerAndInventoryUseCase>();
 builder.Services.AddTransient<IViewCustomersByNameUseCase, ViewCustomersByNameUseCase>();
@@ -44,6 +51,11 @@ builder.Services.AddTransient<IRemoveCustomerPriceUseCase, RemoveCustomerPriceUs
 builder.Services.AddTransient<IAddCustomerPriceItemUseCase, AddCustomerPriceItemUseCase>();
 builder.Services.AddTransient<IRemoveCustomerPricesUseCase, RemoveCustomerPricesUseCase>();
 builder.Services.AddTransient<IRemoveCustomerUseCase, RemoveCustomerUseCase>(); 
+
+builder.Services.AddTransient<IGetAllReportsUseCase, GetAllReportsUseCase>();
+builder.Services.AddTransient<IAddVoucherUseCase, AddVoucherUseCase>();
+builder.Services.AddTransient<ICreateReportUseCase, CreateReportUseCase>();
+builder.Services.AddTransient<IUpdateVoucherUseCase, UpdateVoucherUseCase>();
 
 var app = builder.Build();
 

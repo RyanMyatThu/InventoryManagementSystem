@@ -20,5 +20,6 @@ namespace IMS.CoreBusiness
 
         public int TotalItems { get; set; } = 0;
         public ICollection<CustomerPrice> CustomerPrices { get; set; } = new List<CustomerPrice>();
+        public ICollection<Reports> Reports { get; set; } = new List<Reports>();
     }
 }

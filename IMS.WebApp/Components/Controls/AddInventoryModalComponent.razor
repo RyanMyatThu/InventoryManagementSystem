@@ -30,7 +30,7 @@
     [Inject] IJSRuntime JSInterop { get; set; } = default!;
     [Inject] public IAddInventoryUseCase AddInventoryUseCase { get; set; } = default!;
     [Inject] public IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase { get; set; } = default!;
-
+    
     [Parameter] 
     public EventCallback OnProductAdded { get; set; }
 

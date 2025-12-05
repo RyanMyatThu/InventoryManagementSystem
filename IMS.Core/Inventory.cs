@@ -18,5 +18,6 @@ namespace IMS.CoreBusiness
         public bool DeleteFlag { get; set; } = false;
 
         public ICollection<CustomerPrice> CustomerPrices { get; set; } = new List<CustomerPrice>();
+        public ICollection<Vouchers> Vouchers { get; set; } = new List<Vouchers>();
     }
 }

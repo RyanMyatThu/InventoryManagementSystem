@@ -1,4 +1,5 @@
-﻿@if(this.Item is not null){
+﻿@using IMS.UseCases.CustomerPrices.Interfaces
+@if(this.Item is not null){
     <tr>
     <td>@Item.InventoryName</td>
     <td>@Item.Price</td>
@@ -22,7 +23,7 @@
 @code {
     [Inject] IJSRuntime JSRuntime { get; set; } = default!;
     [Inject] IDeleteInventoryUseCase deleteInventoryUseCase { get; set; } = default!;
-
+    [Inject] ICheckForInventoryItemUseCase checkForInventoryItemUseCase { get; set; } = default!;
 
     [Parameter]
     public Inventory? Item { get; set; }
@@ -41,10 +42,18 @@
     {
         if (Item is not null)
         {
-            await deleteInventoryUseCase.ExecuteAsync(Item.InventoryId);
+            var itemExists = await checkForInventoryItemUseCase.ExecuteAsync(Item.InventoryId);
+            if (!itemExists)
+            {
+                await deleteInventoryUseCase.ExecuteAsync(Item.InventoryId);
 
-            await OnProductDelete.InvokeAsync();
-            await JSRuntime.InvokeVoidAsync("showDeleteSuccessful");
+                await OnProductDelete.InvokeAsync();
+                await JSRuntime.InvokeVoidAsync("showDeleteSuccessful");
+            } else
+            {
+                await JSRuntime.InvokeVoidAsync("alert", $"You must remove the item , {Item.InventoryName.Trim()} , from every customer purchasing it in order to remove it from the inventory.");
+                return;
+            }
         }
 
     }

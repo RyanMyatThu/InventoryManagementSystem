@@ -50,4 +50,24 @@ window.showErrorToast = () => {
     }
 }
 
+window.toggleSidebar = (isCollapsed) => {
+    const mainContent = document.querySelector(".main-content");
+    if (!mainContent) return;
 
+    if (isCollapsed) {
+        mainContent.classList.add("collapsed");
+        localStorage.setItem("mainCollapsed", "true");
+    } else {
+        mainContent.classList.remove("collapsed");
+        localStorage.setItem("mainCollapsed", "false");
+    }
+};
+
+window.loadSidebarState = () => {
+    const collapsed = localStorage.getItem("mainCollapsed") === "true";
+    const mainContent = document.querySelector(".main-content");
+    if (mainContent) {
+        mainContent.classList.toggle("collapsed", collapsed);
+    }
+    return collapsed;
+};

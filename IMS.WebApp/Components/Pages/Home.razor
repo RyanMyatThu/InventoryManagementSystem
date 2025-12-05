@@ -2,6 +2,8 @@
 @inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase;
 @inject IGetCustomerAndInventoryUseCase GetCustomerAndInventoryUseCase;
 @inject IViewCustomersByNameUseCase ViewCustomersByNameUseCase;
+@rendermode InteractiveServer
+
 <PageTitle>Test Page</PageTitle>
 
 <br />
@@ -40,6 +42,8 @@
 </ul>
 
 @code {
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+
     private List<Inventory>? inventories;
     private List<Customer>? customers;
 
@@ -54,6 +58,13 @@
         foreach (var (inventory, sellPrice) in customerNInv)
         {
             Console.WriteLine($"Inventory: {inventory.InventoryName}, SellPrice: {sellPrice}");
+        }
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeAsync<bool>("loadSidebarState");
         }
     }
 

@@ -21,3 +21,4 @@ C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Core\obj\Debug\net
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Core\obj\Debug\net8.0\refint\IMS.CoreBusiness.dll
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.pdb
 C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Core\obj\Debug\net8.0\ref\IMS.CoreBusiness.dll
+C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.Core\obj\Debug\net8.0\IMS.CoreBusiness.sourcelink.json

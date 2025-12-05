@@ -141,7 +141,13 @@
         customers = (await ViewCustomersByNameUseCase.ExecuteAsync()).ToList();
         inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
     }
-
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeAsync<bool>("loadSidebarState");
+        }
+    }
     private string GetInitials( string value){
         return string.Concat(value
            .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)

@@ -87,5 +87,21 @@ namespace IMS.Plugins.EFCore
             return await _db.SaveChangesAsync();
 
         }
+
+        public async Task<bool> CheckForInventoryItemAsync(int inventoryId)
+        {
+            if (inventoryId == 0) throw new Exception("Inventory Id cannot be 0");
+
+            var items = await _db.CustomerPrices.Include(cp => cp.Inventory)
+                                          .Where(i => i.InventoryId == inventoryId)
+                                          .ToListAsync();
+            if (items is null || items.Count() == 0)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
+        }
     }
 }

@@ -1,0 +1,97 @@
+﻿@rendermode InteractiveServer
+@inject IJSRuntime JSRuntime
+<nav id="sidebarMenu"
+     class="bg-dark text-light vh-100 position-fixed d-flex flex-column shadow-lg transition-all"
+     style="width:@(IsCollapsed ? "80px" : "250px"); overflow-x:hidden;">
+
+    <!-- Logo / Header -->
+    <div class="d-flex align-items-center justify-content-between p-3 border-bottom border-secondary">
+        <div class="d-flex align-items-center">
+            <i class="bi-boxes text-primary fs-3 me-2"></i>
+            @if (!IsCollapsed)
+            {
+                <span class="fw-bold fs-5">IMS</span>
+            }
+        </div>
+        <button class="btn btn-sm btn-outline-light border-0 rounded-1" @onclick="ToggleCollapse">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav nav-pills flex-column mt-3 mb-auto px-2">
+        <li class="nav-item mb-1">
+            <NavLink class="nav-link sidebar-link"
+                     href=""
+                     Match="NavLinkMatch.All">
+                <i class="bi-house-door-fill"></i>
+                @if (!IsCollapsed)
+                {
+                    <span class="ms-2">Home</span>
+                }
+            </NavLink>
+        </li>
+        <li class="nav-item mb-1">
+            <NavLink class="nav-link sidebar-link"
+                     href="customers">
+                <i class="bi-people-fill"></i>
+                @if (!IsCollapsed)
+                {
+                    <span class="ms-2">Customers</span>
+                }
+            </NavLink>
+        </li>
+        <li class="nav-item mb-1">
+            <NavLink class="nav-link sidebar-link"
+                     href="inventories">
+                <i class="bi-box-seam-fill"></i>
+                @if (!IsCollapsed)
+                {
+                    <span class="ms-2">Inventories</span>
+                }
+            </NavLink>
+        </li>
+        <li class="nav-item mb-1">
+            <NavLink class="nav-link sidebar-link"
+                     href="reports">
+                <i class="bi-graph-up"></i>
+                @if (!IsCollapsed)
+                {
+                    <span class="ms-2">Reports</span>
+                }
+            </NavLink>
+        </li>
+    </ul>
+
+    <!-- Footer Section -->
+    <div class="p-3 border-top border-secondary d-flex align-items-center">
+        <i class="bi-person-circle fs-4"></i>
+        @if (!IsCollapsed)
+        {
+            <div class="ms-2">
+                <div class="fw-semibold">Admin</div>
+                <small class="text-secondary">System Manager</small>
+            </div>
+        }
+    </div>
+</nav>
+
+@code {
+    private bool IsCollapsed;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            IsCollapsed = await JSRuntime.InvokeAsync<bool>("loadSidebarState");
+            StateHasChanged();
+        }
+    }
+
+    private async Task ToggleCollapse()
+    {
+        IsCollapsed = !IsCollapsed;
+
+        await JSRuntime.InvokeVoidAsync("toggleSidebar", IsCollapsed);
+    }
+}

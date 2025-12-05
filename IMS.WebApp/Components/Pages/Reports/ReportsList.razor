@@ -1,0 +1,86 @@
+﻿@page "/reports"
+@rendermode InteractiveServer
+<PageTitle>Reports</PageTitle>
+@if (customers != null && reports != null)
+{
+    <div class="container py-4">
+        <h1 class="mb-4 fw-semibold">Report List</h1>
+
+        <!-- Top section: Calendar + Filters -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-4">
+                <CalandarComponent />
+            </div>
+            <div class="row col-lg-8 g-1 align-items-end">
+                <CustomerFilters customerList="customers" OnCustomerSelected="OnCustomerSelected" />
+                <div class="col-lg-2">
+                    <button class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#AddReportModal">Create a report</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Reports grid -->
+        <div class="row g-3">
+            @if (FilteredReports != null)
+            {
+                foreach (var report in FilteredReports)
+                {
+                    <div class="col-sm-6 col-lg-4">
+                        <ReportCard Report="report" />
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <AddNewReportModalComponent customerList="customers"></AddNewReportModalComponent>
+
+}
+@code {
+
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] IViewCustomersByNameUseCase ViewCustomersByNameUseCase { get; set; } = default!;
+    [Inject] IGetAllReportsUseCase GetAllReportsUseCase { get; set; } = default!;
+
+    private int SelectedCustomer = 0;
+    private List<Customer>? customers;
+    private List<Reports>? reports;
+
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeAsync<bool>("loadSidebarState");
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        customers = (await ViewCustomersByNameUseCase.ExecuteAsync()).ToList();
+        reports = (await GetAllReportsUseCase.ExecuteAsync()).ToList();
+        
+    }
+
+
+    private List<Reports>? FilteredReports => 
+        SelectedCustomer == 0 
+        ? reports 
+        : reports.Where(r => r.CustomerId == SelectedCustomer).ToList();
+
+    private void OnCustomerSelected(int id)
+    {
+        SelectedCustomer = id;
+    }
+
+    public class ReportModel
+    {
+        public string Id { get; set; } = "";
+        public string CustomerName { get; set; } = "";
+        public DateTime Date { get; set; }
+        public string Status { get; set; } = "";
+    }
+}

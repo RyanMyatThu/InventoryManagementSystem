@@ -1,0 +1,38 @@
+﻿<div class="card shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Filter by Customer</h5>
+        <div class="d-flex flex-wrap gap-2">
+            @if(customerList != null){
+            foreach (var c in customerList)
+            {
+                <button class="@GetButtonClass(c.CustomerId)" @onclick="() => SelectCustomer(c.CustomerId)">
+                    @c.CustomerName
+                </button>
+            }
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public EventCallback<int> OnCustomerSelected { get; set; }
+    [Parameter] public List<Customer>? customerList { get; set; }
+
+    private int Selected = 0;
+
+    private async Task SelectCustomer(int id)
+    {
+        if (id == Selected)
+        {
+            await OnCustomerSelected.InvokeAsync(0);
+            return;
+        }
+        Selected = id;
+        await OnCustomerSelected.InvokeAsync(id);
+    }
+
+    private string GetButtonClass(int id) =>
+        id == Selected
+        ? "btn btn-dark btn-sm"
+        : "btn btn-outline-secondary btn-sm";
+}

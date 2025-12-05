@@ -104,8 +104,6 @@
     [Inject] IRemoveCustomerPriceUseCase RemoveCustomerPriceUseCase { get; set; } = default!;
     [Inject] IGetCustomerByIdUseCase GetCustomerByIdUseCase { get; set; } = default!;
     [Inject] IAddCustomerPriceItemUseCase AddCustomerPriceItemUseCase { get; set; } = default!;
-    [Inject] IGetCustomerPriceItemsUseCase GetCustomerPriceItemsUseCase { get; set; } = default!;
-    [Inject] IRemoveCustomerPricesUseCase RemoveCustomerPricesUseCase { get; set; } = default!;
     [Inject] IRemoveCustomerUseCase RemoveCustomerUseCase { get; set; } = default!;
 
     [Parameter]
@@ -142,17 +140,14 @@
 
     private async Task RemoveCustomer(int customerId)
     {
-        var items = await GetCustomerPriceItemsUseCase.ExecuteAsync(customerId);
-        var res = await RemoveCustomerPricesUseCase.ExecuteAsync(items);
-        if(res > 0)
+        var res = await RemoveCustomerUseCase.ExecuteAsync(customerId);
+         if(res > 0)
         {
-            res = await RemoveCustomerUseCase.ExecuteAsync(customerId);
-            if(res > 0)
-            {
+           
                 await OpenDeletedToast.InvokeAsync();
                 await OnCustomerEdited.InvokeAsync();
                 StateHasChanged();
-            }
+            
         }
     }
 

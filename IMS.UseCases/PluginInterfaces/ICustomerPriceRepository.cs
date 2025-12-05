@@ -22,5 +22,7 @@ namespace IMS.UseCases.PluginInterfaces
 
         Task<int> RemoveCustomerPricesAsync(IEnumerable<CustomerPrice> customerPrices);
 
+        Task<bool> CheckForInventoryItemAsync(int inventoryId);
+
     }
 }
