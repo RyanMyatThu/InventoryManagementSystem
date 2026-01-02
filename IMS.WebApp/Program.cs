@@ -13,8 +13,11 @@ using IMS.UseCases.Report.Interfaces;
 using IMS.UseCases.Voucher;
 using IMS.UseCases.Voucher.Interfaces;
 using IMS.WebApp.Components;
+using IMS.WebApp.Components.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Syncfusion.Blazor;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +29,12 @@ builder.Services.AddDbContext<IMSDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
 }
 );
+
+builder.Services.AddScoped<BrowserService>();
+builder.Services.AddBlazorBootstrap();
+
+
+
 builder.Services.AddScoped<ICustomerRepository, EFCustomerRepository>();
 builder.Services.AddScoped<IInventoryRepository, EFInventoryRepository>();
 builder.Services.AddScoped<ICustomerPriceRepository, EFCustomerPriceRepository>();
@@ -56,7 +65,7 @@ builder.Services.AddTransient<IGetAllReportsUseCase, GetAllReportsUseCase>();
 builder.Services.AddTransient<IAddVoucherUseCase, AddVoucherUseCase>();
 builder.Services.AddTransient<ICreateReportUseCase, CreateReportUseCase>();
 builder.Services.AddTransient<IUpdateVoucherUseCase, UpdateVoucherUseCase>();
-
+builder.Services.AddTransient<IUpdateReportsUseCase, UpdateReportsUsecase>();
 var app = builder.Build();
 
 

@@ -41,13 +41,7 @@
     {
         inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
     }
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeAsync<bool>("loadSidebarState");
-        }
-    }
+   
 
     private async Task LoadList()
     {

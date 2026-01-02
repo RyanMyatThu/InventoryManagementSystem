@@ -18,6 +18,7 @@ namespace IMS.CoreBusiness
         [Required]
         public decimal TotalAmount { get; set; }
 
+        public decimal Profit { get; set; }
         public Customer Customer { get; set; }
         public ICollection<Vouchers> Vouchers { get; set; } = new List<Vouchers>();
     }

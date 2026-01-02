@@ -43,7 +43,7 @@ namespace IMS.Plugins.EFCore
             
         }
 
-        public async Task<Reports> UpdateTotal(Reports report)
+        public async Task<int> UpdateTotal(Reports report)
         {
             if(report is null)
             {
@@ -51,8 +51,9 @@ namespace IMS.Plugins.EFCore
             }
             var existingReport = await _db.Reports.FirstOrDefaultAsync(r => r.ReportId == report.ReportId) ?? throw new Exception("Report not found");
             existingReport.TotalAmount = report.TotalAmount;
-            await _db.SaveChangesAsync();
-            return existingReport;
+            existingReport.Profit = report.Profit;
+            return await _db.SaveChangesAsync();
+           
         }
     }
 }

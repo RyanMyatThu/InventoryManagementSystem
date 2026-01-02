@@ -3,24 +3,28 @@
 <PageTitle>Reports</PageTitle>
 @if (customers != null && reports != null)
 {
-    <div class="container py-4">
-        <h1 class="mb-4 fw-semibold">Report List</h1>
+    <div class="container ms-4 py-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 class="h3 fw-bold">Report List</h1>
+                <p class="text-muted">Manage and add customer purchases.</p>
+            </div>
+            <a class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#AddReportModal">
+                <i class="bi bi-plus-lg me-2"></i> Create a report
+            </a>
+        </div>
 
-        <!-- Top section: Calendar + Filters -->
-        <div class="row g-4 mb-4">
-            <div class="col-lg-4">
+        <div class="d-flex flex-wrap  gap-4 mb-4">
+            <div>
                 <CalandarComponent />
             </div>
-            <div class="row col-lg-8 g-1 align-items-end">
+            <div class="flex-grow-1">
                 <CustomerFilters customerList="customers" OnCustomerSelected="OnCustomerSelected" />
-                <div class="col-lg-2">
-                    <button class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#AddReportModal">Create a report</button>
-                </div>
+                
             </div>
             
         </div>
 
-        <!-- Reports grid -->
         <div class="row g-3">
             @if (FilteredReports != null)
             {
@@ -34,8 +38,17 @@
         </div>
     </div>
 
-    <AddNewReportModalComponent customerList="customers"></AddNewReportModalComponent>
-
+    <AddNewReportModalComponent OnReportAdded="LoadList" OpenToast="SaveInvoice" OpenErrorToast="ErrorToast" customerList="customers"></AddNewReportModalComponent>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">User Action Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toast-body">
+            </div>
+        </div>
+    </div>
 }
 @code {
 
@@ -48,21 +61,11 @@
     private List<Reports>? reports;
 
 
-
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeAsync<bool>("loadSidebarState");
-        }
-    }
-
     protected override async Task OnInitializedAsync()
     {
         customers = (await ViewCustomersByNameUseCase.ExecuteAsync()).ToList();
         reports = (await GetAllReportsUseCase.ExecuteAsync()).ToList();
-        
+
     }
 
 
@@ -76,11 +79,33 @@
         SelectedCustomer = id;
     }
 
-    public class ReportModel
+    private async Task LoadList()
     {
-        public string Id { get; set; } = "";
-        public string CustomerName { get; set; } = "";
-        public DateTime Date { get; set; }
-        public string Status { get; set; } = "";
+        reports = (await GetAllReportsUseCase.ExecuteAsync()).ToList();
+        StateHasChanged();
+
+    }
+
+
+    private async Task SaveInvoice()
+    {
+        await JSRuntime.InvokeVoidAsync("showSaveSuccessful");
+
+    }
+
+    private async Task EditProduct()
+    {
+        await JSRuntime.InvokeVoidAsync("showEditSuccessful");
+    }
+
+    private async Task DeleteProduct()
+    {
+        await JSRuntime.InvokeVoidAsync("showDeleteSuccessful");
+    }
+
+    private async Task ErrorToast()
+    {
+        await JSRuntime.InvokeVoidAsync("showErrorToast");
+
     }
 }

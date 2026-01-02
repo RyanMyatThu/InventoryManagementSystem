@@ -1,15 +1,24 @@
-﻿@inherits LayoutComponentBase
+﻿@inject IJSRuntime JSRuntime
+@inherits LayoutComponentBase
 
-<div class="page">
+<div class="page d-flex">
     <SideBarMenu />
 
-    <main class="main-content">
-        <article class="content px-3">
+    <main class="@(IsCollapsed ? "collapsed" : null) main-content">
+        <article class="content ms-4 px-3">
             @Body
         </article>
     </main>
 </div>
 
 @code {
-    
-}
+    private bool IsCollapsed;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        
+            IsCollapsed = await JSRuntime.InvokeAsync<bool>("loadSidebarState");
+            StateHasChanged();
+        }
+    }
+

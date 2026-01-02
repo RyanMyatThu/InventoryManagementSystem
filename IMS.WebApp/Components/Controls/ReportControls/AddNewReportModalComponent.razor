@@ -1,4 +1,5 @@
 ﻿@using IMS.UseCases.Voucher.Interfaces
+@using IMS.UseCases.Report.Interfaces
 @if (customerList != null){
 <div class="modal fade" id="AddReportModal" tabindex="-1" aria-labelledby="AddReportModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -85,6 +86,8 @@
                 <div class="row mt-4">
                     <div class="col-md-12 text-end">
                         <h5>Total Amount: <span class="fw-bold">@TotalAmount</span></h5>
+                        <br />
+                        <h5>Profit : <span class="fw-bold">@(TotalAmount - TotalCosts)</span></h5>
                     </div>
                 </div>
                 }
@@ -93,7 +96,7 @@
 
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="close-add-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" @onclick="HandleSaveInvoiceAsync">Save Invoice</button>
             </div>
 
@@ -103,11 +106,23 @@
 </div>
 }
 @code {
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
     [Parameter] public List<Customer>? customerList { get; set; }
     [Inject] public IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase { get; set; } = default!;
     [Inject] public ICreateReportUseCase CreateReportUseCase { get; set; } = default!;
     [Inject] public IAddVoucherUseCase addVoucherUseCase { get; set; } = default!;
+    [Inject] public IUpdateVoucherUseCase updateVoucherUseCase { get; set; } = default!;
+    [Inject] public IUpdateReportsUseCase updateReportsUseCase { get; set; } = default!;
 
+
+    [Parameter]
+    public EventCallback OpenToast { get; set; }
+
+    [Parameter]
+    public EventCallback OpenErrorToast { get; set; }
+
+    [Parameter]
+    public EventCallback OnReportAdded { get; set; }
 
     private int selectedCustomerId { get; set; } = 0;
     private DateTime invoiceDate { get; set; } = DateTime.Today.AddDays(1);
@@ -119,6 +134,9 @@
     private bool isDisabled = false;
     private decimal TotalAmount =>
     voucherList.Sum(item => item.SellPrice * item.Quantity);
+    private decimal TotalCosts =>
+    voucherList.Sum(item => item.Inventory.Price * item.Quantity);
+    private Reports report;
 
     private async Task OnCustomerChanged(ChangeEventArgs e)
     {
@@ -135,14 +153,15 @@
                           .ToList();
 
             itemSellPriceMap = customerPrice.ToDictionary(cp => cp.InventoryId, cp => cp.SellPrice);
-            Reports reports = new Reports
+            report = new Reports
                 {
                     CustomerId = selectedCustomerId,
                     Customer = customer,
                     ReportDate = invoiceDate,
                     TotalAmount = 0,
+                    Profit = 0
                 };
-            reportId = await CreateReportUseCase.ExecuteAsync(reports);
+            reportId = await CreateReportUseCase.ExecuteAsync(report);
             foreach (var (inventoryId, sellPrice) in itemSellPriceMap)
             {
                 Inventory inventory = inventories.First(inv => inv.InventoryId == inventoryId);
@@ -168,6 +187,26 @@
     }
     private async Task HandleSaveInvoiceAsync()
     {
-        
+        if(TotalAmount == 0)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Total amount cannot be zero. Please add items to the invoice.");
+            return;
+        }
+        report.TotalAmount = TotalAmount;
+        report.Profit = TotalAmount - TotalCosts;
+        int res1 = await updateVoucherUseCase.ExecuteAsync();
+        int res2 = await updateReportsUseCase.ExecuteAsync(report);
+        if(res1 >= 0 && res2 >= 0)
+        {
+            Console.WriteLine(res1 + " " + res2 + " successful ");
+            selectedCustomerId = 0;
+            isDisabled = false;
+            voucherList.Clear();
+            await OpenToast.InvokeAsync();
+            await OnReportAdded.InvokeAsync();
+        } else
+        {
+            await OpenErrorToast.InvokeAsync();
+        }
     }
 }

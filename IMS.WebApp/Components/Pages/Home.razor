@@ -9,63 +9,8 @@
 <br />
 <br />
 
-<ul>
-    @if(inventories is not null && inventories.Count > 0)
-    {
-        foreach(var item in inventories)
-        {
-            <li>
-                @item.InventoryName
-            </li> 
-        }
-    }
-    @if (customers is not null && customers.Count > 0)
-    {
-        foreach (var customer in customers)
-        {
-            <li>
-                @customer.CustomerName
-            </li>
-        }
-    }
-    @if (customerNInv is not null && customerNInv.Count > 0)
-    {
-        foreach (var (inventory, sellPrice) in customerNInv)
-        {
-            <li>
-                 @inventory.InventoryName : sell price @sellPrice
-            </li>
-        }
-        
-    }
 
-</ul>
 
 @code {
-    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
-
-    private List<Inventory>? inventories;
-    private List<Customer>? customers;
-
-    private List<(Inventory Inventory, decimal SellPrice)>? customerNInv;
-    protected override async Task OnInitializedAsync()
-    {
-        inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
-        customers = (await ViewCustomersByNameUseCase.ExecuteAsync()).ToList();
-
-        customerNInv = (await GetCustomerAndInventoryUseCase.ExecuteAsync(2)).ToList();
-        Console.WriteLine("Inventories for Customer #2:");
-        foreach (var (inventory, sellPrice) in customerNInv)
-        {
-            Console.WriteLine($"Inventory: {inventory.InventoryName}, SellPrice: {sellPrice}");
-        }
-    }
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeAsync<bool>("loadSidebarState");
-        }
-    }
-
+   
 }

@@ -14,35 +14,38 @@
             </div>
         </div>
 
-        <div class="text-center fw-semibold text-muted mb-2">
-            <div class="row row-cols-7 g-0">
-                @foreach (var day in DayLabels)
-                {
-                    <div class="col small">@day</div>
-                }
-            </div>
+        <div class="calendar-grid container text-center fw-semibold text-muted mb-2">
+            @foreach (var day in DayLabels)
+            {
+                <div>@day</div>
+            }
         </div>
 
-        <div class="row row-cols-7 g-1 text-center">
+        <div class="calendar-grid text-center">
+            
             @for (int i = 0; i < FirstDayOffset; i++)
             {
-                <div class="col"></div>
+                <div></div>
             }
+            
             @for (int d = 1; d <= DaysInMonth; d++)
             {
-                bool isToday = d == 10 && CurrentDate.Month == 1;
-                <div class="col">
-                    <button class="btn btn-sm w-100 @GetDayClass(isToday)">
-                        @d
-                    </button>
-                </div>
+                bool isToday =
+                d == DateTime.Today.Day &&
+                CurrentDate.Month == DateTime.Today.Month &&
+                CurrentDate.Year == DateTime.Today.Year;
+
+                <button class=" btn btn-sm w-100 @GetDayClass(isToday)">
+                    @d
+                </button>
             }
-        </div>
+            </div>
+       
     </div>
 </div>
 
 @code {
-    private DateTime CurrentDate = new DateTime(2025, 1, 1);
+    private DateTime CurrentDate = DateTime.Today;
 
     private string[] DayLabels = new[] { "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" };
     private int DaysInMonth => DateTime.DaysInMonth(CurrentDate.Year, CurrentDate.Month);

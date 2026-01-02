@@ -12,6 +12,6 @@ namespace IMS.UseCases.PluginInterfaces
         Task<IEnumerable<Reports>> GetAllReports();
         Task<Reports?> CreateReport(Reports report);
         Task<Reports?> GetReportById(int reportId);
-        Task<Reports> UpdateTotal(Reports report);
+        Task<int> UpdateTotal(Reports report);
     }
 }

@@ -7,8 +7,80 @@
       "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\addnewreportmodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\ivouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\ivouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\customerscontrols\\addcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\customerscontrols\\addcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\addinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\addinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\calandarcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\calandarcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\reports\\reportslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\reports\\reportslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\layout\\sidebarmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\layout\\sidebarmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\inventories\\inventorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\inventories\\inventorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\customerfilters.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\customerfilters.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\wwwroot\\js\\interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\wwwroot\\js\\interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efreportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efreportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\reportcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\reportcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\customerscontrols\\editcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\customerscontrols\\editcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\editinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\editinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\updatereportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\updatereportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\interfaces\\iupdatereportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\interfaces\\iupdatereportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efvouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efvouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|solutionrelative:ims.core\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\vouchers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +91,64 @@
       "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\imsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efvouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efvouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efreportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efreportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\ireportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\ireportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\services\\browserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\services\\browserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\inventorylistitemcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\inventorylistitemcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\ims.webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\ims.webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\efcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\ireportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\ireportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\createreportusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\createreportusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\interfaces\\igetreportbycustomeridusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\interfaces\\igetreportbycustomeridusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\ivouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\ivouchersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\getallreportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,10 +171,6 @@
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\getreportbycustomeridusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\calandarcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\calandarcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\voucher\\updatevoucherusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\voucher\\updatevoucherusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,44 +183,12 @@
       "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\efinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\reports\\reportslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\reports\\reportslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\interfaces\\igetallreportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\interfaces\\igetallreportsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\interfaces\\icreatereportusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\interfaces\\icreatereportusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\report\\createreportusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\report\\createreportusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\inventorylistitemcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\inventorylistitemcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\customerscontrols\\addcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\customerscontrols\\addcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\customerprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,32 +199,12 @@
       "RelativeMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|solutionrelative:ims.core\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|solutionrelative:ims.core\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\reportcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\reportcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\customerfilters.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\reportcontrols\\customerfilters.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.core\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67FA7AD4-92FF-4D71-B55B-DBCCDF51CF4C}|IMS.Core\\IMS.CoreBusiness.csproj|solutionrelative:ims.core\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\customerscontrols\\editcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\customerscontrols\\editcustomermodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customers\\getcustomerandinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customers\\getcustomerandinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\getcustomerpriceitemsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,18 +213,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\addcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\addcustomerpriceitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\layout\\sidebarmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\layout\\sidebarmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\inventories\\deleteinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -203,22 +247,6 @@
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customers\\getcustomerbyidusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\inventories\\inventorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\inventories\\inventorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\wwwroot\\js\\interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\wwwroot\\js\\interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\plugininterfaces\\iinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\plugininterfaces\\iinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -231,20 +259,12 @@
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\checkforinventoryitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\addinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\addinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customerprices\\interfaces\\icheckforinventoryitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|solutionrelative:ims.usecases\\customerprices\\interfaces\\icheckforinventoryitemusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\editinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\editinventorymodalcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE8EE9FA-D5A0-4A97-B424-271E973C91CC}|IMS.UseCases\\IMS.UseCases.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.usecases\\customers\\editcustomerusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -269,10 +289,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.plugins.efcore\\ims.plugins.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5BE97F9A-DA5C-4D0D-9B8E-FA165C7628EA}|IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj|solutionrelative:ims.plugins.efcore\\ims.plugins.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -306,17 +322,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
               "Title": "ReportsList.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Reports\\ReportsList.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Reports\\ReportsList.razor",
               "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Reports\\ReportsList.razor",
               "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Reports\\ReportsList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-02T08:42:23.717Z",
               "IsPinned": true,
@@ -328,7 +344,232 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "AddNewReportModalComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAKMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:43:37.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryList.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAD8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T13:03:53.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SideBarMenu.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:25:09.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalandarComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T12:41:28.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddCustomerModalComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T11:49:38.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddInventoryModalComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwCgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T11:31:52.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerList.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAJwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:11:14.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerFilters.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:45:30.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "interop.js",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
+              "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\js\\interop.js",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
+              "RelativeToolTip": "IMS.WebApp\\wwwroot\\js\\interop.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-01T07:44:47.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T13:28:19.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EFReportsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFReportsRepository.cs",
+              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFReportsRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFReportsRepository.cs",
+              "RelativeToolTip": "IMS.Plugins.EfCore\\EFReportsRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwDYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T15:08:14.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReportCard.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T12:35:03.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditCustomerModalComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAC8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T11:49:39.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditInventoryModalComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T13:27:18.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InventoryListComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T13:27:24.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdateReportsUsecase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\UpdateReportsUsecase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\UpdateReportsUsecase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\UpdateReportsUsecase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\UpdateReportsUsecase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T03:58:38.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUpdateReportsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IUpdateReportsUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IUpdateReportsUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IUpdateReportsUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\IUpdateReportsUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T03:47:04.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "EFVouchersRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFVouchersRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFVouchersRepository.cs",
@@ -341,59 +582,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IReportsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
-              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "Reports.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Reports.cs",
+              "RelativeDocumentMoniker": "IMS.Core\\Reports.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Reports.cs",
+              "RelativeToolTip": "IMS.Core\\Reports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:27:49.457Z",
+              "WhenOpened": "2025-10-17T04:19:38.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IVouchersRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
-              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:28:05.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IMSDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMSDbContext.cs",
-              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\IMSDbContext.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMSDbContext.cs",
-              "RelativeToolTip": "IMS.Plugins.EfCore\\IMSDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T11:56:49.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EFReportsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFReportsRepository.cs",
-              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFReportsRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFReportsRepository.cs",
-              "RelativeToolTip": "IMS.Plugins.EfCore\\EFReportsRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T15:08:14.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "Vouchers.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Vouchers.cs",
               "RelativeDocumentMoniker": "IMS.Core\\Vouchers.cs",
@@ -406,406 +608,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddNewReportModalComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-02T08:43:37.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EFCustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
-              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
-              "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwCcAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:13:54.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IGetReportByCustomerIdUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T10:47:54.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetAllReportsUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T14:03:22.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddVoucherUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T09:34:49.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IAddVoucherUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T09:34:34.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUpdateVoucherUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T02:53:59.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetReportByCustomerIdUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T10:48:11.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CalandarComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-11T12:41:28.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UpdateVoucherUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T03:02:52.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EFCustomerPriceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:59:04.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EFInventoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFInventoryRepository.cs",
-              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFInventoryRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFInventoryRepository.cs",
-              "RelativeToolTip": "IMS.Plugins.EfCore\\EFInventoryRepository.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA5wDgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T03:11:10.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CustomerList.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEAAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T12:11:14.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
-              "RelativeToolTip": "IMS.WebApp\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:05:29.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "IGetAllReportsUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "IMSDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMSDbContext.cs",
+              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\IMSDbContext.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMSDbContext.cs",
+              "RelativeToolTip": "IMS.Plugins.EfCore\\IMSDbContext.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:55:52.624Z",
+              "WhenOpened": "2025-10-15T11:56:49.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "ICreateReportUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T10:42:14.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-07T13:28:19.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateReportUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\CreateReportUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\CreateReportUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\CreateReportUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Report\\CreateReportUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T10:42:50.391Z"
+              "WhenOpened": "2025-10-07T09:13:13.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T13:25:27.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
+              "RelativeToolTip": "IMS.WebApp\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:05:29.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\App.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\App.razor",
               "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\App.razor",
               "RelativeToolTip": "IMS.WebApp\\Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-07T13:28:09.523Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "InventoryListItemComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-12T16:14:32.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AddCustomerModalComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T11:49:38.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CustomerPrice.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
-              "RelativeDocumentMoniker": "IMS.Core\\CustomerPrice.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
-              "RelativeToolTip": "IMS.Core\\CustomerPrice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T13:17:31.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Inventory.cs",
-              "RelativeDocumentMoniker": "IMS.Core\\Inventory.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Inventory.cs",
-              "RelativeToolTip": "IMS.Core\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T04:17:09.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Reports.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Reports.cs",
-              "RelativeDocumentMoniker": "IMS.Core\\Reports.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Reports.cs",
-              "RelativeToolTip": "IMS.Core\\Reports.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T04:19:38.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ReportCard.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-11T12:35:03.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CustomerFilters.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-02T08:45:30.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "EditCustomerModalComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-30T11:49:39.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Customer.cs",
-              "RelativeDocumentMoniker": "IMS.Core\\Customer.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Customer.cs",
-              "RelativeToolTip": "IMS.Core\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:48:07.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
-              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowBIAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T03:43:30.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "GetCustomerAndInventoryUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T12:37:45.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "GetCustomerPriceItemsUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T03:28:32.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "AddCustomerPriceItemUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T13:19:27.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Error.razor",
@@ -817,31 +681,319 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\_Imports.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\_Imports.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "BrowserService.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Services\\BrowserService.cs",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Services\\BrowserService.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Services\\BrowserService.cs",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Services\\BrowserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T05:01:00.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "InventoryListItemComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-07T13:25:27.261Z"
+              "WhenOpened": "2025-10-12T16:14:32.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\app.css",
+              "RelativeToolTip": "IMS.WebApp\\wwwroot\\app.css",
+              "ViewState": "AgIAALkAAAAAAAAAAAAwwNgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-07T09:07:23.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IMS.WebApp.csproj",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\IMS.WebApp.csproj",
+              "RelativeDocumentMoniker": "IMS.WebApp\\IMS.WebApp.csproj",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\IMS.WebApp.csproj",
+              "RelativeToolTip": "IMS.WebApp\\IMS.WebApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-02T01:48:22.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EFCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
+              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
+              "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:13:54.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T03:43:30.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IReportsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
+              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T14:27:49.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IGetReportByCustomerIdUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:47:54.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IVouchersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
+              "RelativeToolTip": "IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T14:28:05.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CreateReportUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\CreateReportUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\CreateReportUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\CreateReportUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\CreateReportUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:42:50.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GetAllReportsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T14:03:22.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddVoucherUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T09:34:49.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IAddVoucherUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T09:34:34.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IUpdateVoucherUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T02:53:59.011Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "SideBarMenu.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
+              "Title": "GetReportByCustomerIdUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-01T14:25:09.516Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:48:11.867Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
+              "Title": "UpdateVoucherUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T03:02:52.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EFCustomerPriceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "RelativeToolTip": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:59:04.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "EFInventoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFInventoryRepository.cs",
+              "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFInventoryRepository.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFInventoryRepository.cs",
+              "RelativeToolTip": "IMS.Plugins.EfCore\\EFInventoryRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:11:10.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IGetAllReportsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:55:52.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ICreateReportUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:42:14.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CustomerPrice.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
+              "RelativeDocumentMoniker": "IMS.Core\\CustomerPrice.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
+              "RelativeToolTip": "IMS.Core\\CustomerPrice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:17:31.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Inventory.cs",
+              "RelativeDocumentMoniker": "IMS.Core\\Inventory.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Inventory.cs",
+              "RelativeToolTip": "IMS.Core\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T04:17:09.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Customer.cs",
+              "RelativeDocumentMoniker": "IMS.Core\\Customer.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Customer.cs",
+              "RelativeToolTip": "IMS.Core\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:48:07.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "GetCustomerAndInventoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T12:37:45.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "GetCustomerPriceItemsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T03:28:32.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AddCustomerPriceItemUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "RelativeToolTip": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:19:27.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "DeleteInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\DeleteInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\DeleteInventoryUseCase.cs",
@@ -853,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 54,
               "Title": "AddInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\AddInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\AddInventoryUseCase.cs",
@@ -865,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 55,
               "Title": "IGetInventoryByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\Interfaces\\IGetInventoryByIdUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\Interfaces\\IGetInventoryByIdUseCase.cs",
@@ -877,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 56,
               "Title": "IAddInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\Interfaces\\IAddInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\Interfaces\\IAddInventoryUseCase.cs",
@@ -889,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 58,
               "Title": "ViewCustomersByNameUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
@@ -901,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 57,
               "Title": "ICustomerPriceRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
@@ -913,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 59,
               "Title": "RemoveCustomerUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
@@ -925,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 60,
               "Title": "GetCustomerByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerByIdUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\GetCustomerByIdUseCase.cs",
@@ -937,55 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "InventoryList.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T13:03:53.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "interop.js",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
-              "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\js\\interop.js",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
-              "RelativeToolTip": "IMS.WebApp\\wwwroot\\js\\interop.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-01T07:44:47.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-07T09:13:13.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "app.css",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\app.css",
-              "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\app.css",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\app.css",
-              "RelativeToolTip": "IMS.WebApp\\wwwroot\\app.css",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAwwL4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-07T09:07:23.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 61,
               "Title": "IInventoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IInventoryRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IInventoryRepository.cs",
@@ -997,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 63,
               "Title": "CheckForInventoryItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\CheckForInventoryItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\CheckForInventoryItemUseCase.cs",
@@ -1009,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 62,
               "Title": "RemoveCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
@@ -1021,19 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "AddInventoryModalComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-11T11:31:52.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "ICheckForInventoryItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\ICheckForInventoryItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\ICheckForInventoryItemUseCase.cs",
@@ -1045,7 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 65,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Routes.razor",
@@ -1057,19 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "EditInventoryModalComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T13:27:18.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "EditCustomerUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\EditCustomerUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\EditCustomerUseCase.cs",
@@ -1081,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "IEditCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
@@ -1093,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 70,
               "Title": "IAddCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceUseCase.cs",
@@ -1105,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 67,
               "Title": "AddCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
@@ -1117,7 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 71,
               "Title": "IMS.Plugins.EFCore.csproj",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj",
@@ -1129,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "IAddCustomerPriceItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
@@ -1141,31 +1221,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "InventoryListComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwB0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T13:27:24.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 72,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\MainLayout.razor.css",
               "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor.css",
               "RelativeToolTip": "IMS.WebApp\\Components\\Layout\\MainLayout.razor.css",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAIBJwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-07T10:26:35.635Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 73,
               "Title": "IRemoveCustomerUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
@@ -1177,7 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 74,
               "Title": "RemoveCustomerPricesUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
@@ -1189,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 75,
               "Title": "IRemoveCustomerPricesUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
@@ -1201,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 76,
               "Title": "IGetCustomerPriceItemsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
@@ -1213,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 77,
               "Title": "IRemoveCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",
