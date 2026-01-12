@@ -1,15 +1,17 @@
-﻿<h3>ViewReportModalComponent</h3>
+﻿
 @using IMS.WebApp.Models
 @using IMS.CoreBusiness
+@using System.Globalization
+@using IMS.WebApp.Culture
 @inject IJSRuntime JSRuntime
 
 @if(Report != null){
-    <div class="modal d-block" id="ViewReportModal" tabindex="-1" style="background: rgba(0,0,0,0.5);">
+    <div class="modal d-block" id="ViewReportModal" tabindex="-1" style="background: rgba(0,0,0,0.5);" aria-labelledby="ViewReportModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <div>
-                        <h5 class="modal-title mb-0">
+                        <h5 class="modal-title mb-0" id="ViewReportModalTitle">
                             @if (Report is null)
                             {
                                 <span>Report</span>
@@ -35,7 +37,7 @@
                     <div class="ms-auto d-flex gap-2">
                         <button class="btn btn-outline-secondary btn-sm" @onclick="PrintAsync" title="Print">Print</button>
                         <button class="btn btn-outline-secondary btn-sm" @onclick="ExportCsvAsync" title="Export CSV">Export</button>
-                        <button id="close-view-modal" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button id="close-view-modal" type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
 
@@ -73,8 +75,8 @@
                                         <tr>
                                             <td>@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</td>
                                             <td class="text-end">@v.Quantity</td>
-                                            <td class="text-end">@v.SellPrice.ToString("C")</td>
-                                            <td class="text-end">@v.SubTotal.ToString("C")</td>
+                                            <td class="text-end">@v.SellPrice.ToString("C", mm.NumberFormatInfo)</td>
+                                            <td class="text-end">@((v.SellPrice * v.Quantity).ToString("C", mm.NumberFormatInfo))</td>
                                         </tr>
                                     }
                                 </tbody>
@@ -88,22 +90,18 @@
 
                             <div class="col-md-6">
                                 @{
-                                    var subtotal = Report.Vouchers?.Sum(x => x.SubTotal) ?? 0m;
                                     var profit = Report.Profit;
                                     var total = Report.TotalAmount;
                                 }
                                 <div class="d-flex justify-content-end">
-                                    <div class="me-4 text-end">
-                                        <div class="small text-muted">Subtotal</div>
-                                        <div class="fw-semibold">@subtotal.ToString("C")</div>
-                                    </div>
+                                  
                                     <div class="me-4 text-end">
                                         <div class="small text-muted">Profit</div>
-                                        <div class="fw-semibold">@profit.ToString("C")</div>
+                                        <div class="fw-semibold">@profit.ToString("C", mm.NumberFormatInfo)</div>
                                     </div>
                                     <div class="text-end">
                                         <div class="small text-muted">Total</div>
-                                        <div class="fs-5 fw-bold">@total.ToString("C")</div>
+                                        <div class="fs-5 fw-bold">@total.ToString("C", mm.NumberFormatInfo)</div>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +110,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button id="close-view-modal" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                    <button id="close-view-modal" type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -122,6 +120,8 @@
 
     [Parameter]
     public Reports? Report { get; set; }
+
+    private Myanmar mm = new Myanmar();
 
     private Task PrintAsync()
     {
