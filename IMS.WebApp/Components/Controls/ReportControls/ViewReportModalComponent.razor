@@ -1,0 +1,168 @@
+﻿<h3>ViewReportModalComponent</h3>
+@using IMS.WebApp.Models
+@using IMS.CoreBusiness
+@inject IJSRuntime JSRuntime
+
+@if(Report != null){
+    <div class="modal d-block" id="ViewReportModal" tabindex="-1" style="background: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title mb-0">
+                            @if (Report is null)
+                            {
+                                <span>Report</span>
+                            }
+                            else
+                            {
+                                <span>Report #@Report.ReportId</span>
+                                <div class="small text-muted">@Report.ReportDate.ToString("MMMM dd, yyyy")</div>
+                            }
+                        </h5>
+                        @if (Report is not null)
+                        {
+                            <div class="small text-secondary">
+                                @Report.Customer?.CustomerName
+                                @if (!string.IsNullOrWhiteSpace(Report.Customer?.Address))
+                                {
+                                    <div class="text-muted">@Report.Customer.Address</div>
+                                }
+                            </div>
+                        }
+                    </div>
+
+                    <div class="ms-auto d-flex gap-2">
+                        <button class="btn btn-outline-secondary btn-sm" @onclick="PrintAsync" title="Print">Print</button>
+                        <button class="btn btn-outline-secondary btn-sm" @onclick="ExportCsvAsync" title="Export CSV">Export</button>
+                        <button id="close-view-modal" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    @if (Report is null)
+                    {
+                        <div class="text-center py-4">No report selected.</div>
+                    }
+                    else
+                    {
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <div><strong>Report ID: </strong>@Report.ReportId</div>
+                                <div><strong>Customer ID: </strong>@Report.CustomerId</div>
+                            </div>
+                            <div class="col-md-4 text-md-end text-muted">
+                                <div><strong>Date:</strong> @Report.ReportDate.ToString("g")</div>
+                                <div><strong>Total Vouchers:</strong> @(Report.Vouchers?.Count ?? 0)</div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="w-50">Item / Description</th>
+                                        <th class="text-end">Qty</th>
+                                        <th class="text-end">Unit Price</th>
+                                        <th class="text-end">SubTotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                                    {
+                                        <tr>
+                                            <td>@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</td>
+                                            <td class="text-end">@v.Quantity</td>
+                                            <td class="text-end">@v.SellPrice.ToString("C")</td>
+                                            <td class="text-end">@v.SubTotal.ToString("C")</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                @* If you have additional textual fields add here *@
+                            </div>
+
+                            <div class="col-md-6">
+                                @{
+                                    var subtotal = Report.Vouchers?.Sum(x => x.SubTotal) ?? 0m;
+                                    var profit = Report.Profit;
+                                    var total = Report.TotalAmount;
+                                }
+                                <div class="d-flex justify-content-end">
+                                    <div class="me-4 text-end">
+                                        <div class="small text-muted">Subtotal</div>
+                                        <div class="fw-semibold">@subtotal.ToString("C")</div>
+                                    </div>
+                                    <div class="me-4 text-end">
+                                        <div class="small text-muted">Profit</div>
+                                        <div class="fw-semibold">@profit.ToString("C")</div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="small text-muted">Total</div>
+                                        <div class="fs-5 fw-bold">@total.ToString("C")</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="modal-footer">
+                    <button id="close-view-modal" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+@code {
+
+    [Parameter]
+    public Reports? Report { get; set; }
+
+    private Task PrintAsync()
+    {
+        // rely on browser print; backend handled by user
+        return JSRuntime.InvokeVoidAsync("print").AsTask();
+    }
+
+    private async Task ExportCsvAsync()
+    {
+        if (Report is null) return;
+
+        // build simple CSV in-memory. Backend export (PDF, server-side) can be integrated later.
+        var csv = new System.Text.StringBuilder();
+        csv.AppendLine("ItemDescription,InventoryId,Quantity,UnitPrice,SubTotal");
+        foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+        {
+            var desc = v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}";
+            csv.AppendLine($"\"{Escape(desc)}\",{v.InventoryId},{v.Quantity},{v.SellPrice},{v.SubTotal}");
+        }
+
+        csv.AppendLine();
+        var subtotal = Report.Vouchers?.Sum(x => x.SubTotal) ?? 0m;
+        csv.AppendLine($",,,Subtotal,{subtotal}");
+        csv.AppendLine($",,,Profit,{Report.Profit}");
+        csv.AppendLine($",,,Total,{Report.TotalAmount}");
+
+        var bytes = System.Text.Encoding.UTF8.GetBytes(csv.ToString());
+        var base64 = Convert.ToBase64String(bytes);
+
+        // create a temporary download link in JS
+        await JSRuntime.InvokeVoidAsync("eval", $@"
+            (function(){{
+                const link = document.createElement('a');
+                link.href = 'data:text/csv;base64,{base64}';
+                link.download = 'report-{Report.ReportId}.csv';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }})()");
+    }
+
+    private static string Escape(string input)
+        => string.IsNullOrEmpty(input) ? string.Empty : input.Replace("\"", "\"\"");
+}

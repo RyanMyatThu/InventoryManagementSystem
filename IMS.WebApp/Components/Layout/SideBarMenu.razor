@@ -1,113 +1,275 @@
-﻿@rendermode InteractiveServer
+﻿@using Microsoft.JSInterop
+@rendermode InteractiveServer
 @inject IJSRuntime JSRuntime
-<nav id="sidebarMenu"
-     class="bg-dark text-light h-100 d-flex flex-column shadow-lg transition-all"
-     style="width:@(IsCollapsed ? "80px" : "250px"); overflow-x:hidden;">
 
-    <!-- Logo / Header -->
-    <div class="d-flex align-items-center justify-content-between p-3 border-bottom border-secondary">
-        <div class="d-flex align-items-center">
-            <i class="bi-boxes text-primary fs-3 me-2"></i>
-            @if (!IsCollapsed)
-            {
-                <span class="fw-bold fs-5">IMS</span>
-            }
+<!-- Mobile Top Navigation Bar -->
+@if (IsMobile)
+{
+    <div class="mobile-topbar">
+        <div class="mobile-topbar-content">
+            <div class="mobile-topbar-logo">
+                <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 36px; height: 36px; min-width: 36px;">
+                    <i class="bi-boxes text-white"></i>
+                </div>
+                <span>IMS</span>
+            </div>
+            <nav class="mobile-topbar-nav">
+                <NavLink href="" Match="NavLinkMatch.All" class="mobile-topbar-nav-item">
+                    <i class="bi-house-door-fill"></i>
+                    <span>Home</span>
+                </NavLink>
+                <NavLink href="customers" class="mobile-topbar-nav-item">
+                    <i class="bi-people-fill"></i>
+                    <span>Customers</span>
+                </NavLink>
+                <NavLink href="inventories" class="mobile-topbar-nav-item">
+                    <i class="bi-box-seam-fill"></i>
+                    <span>Inventories</span>
+                </NavLink>
+                <NavLink href="reports" class="mobile-topbar-nav-item">
+                    <i class="bi-graph-up"></i>
+                    <span>Reports</span>
+                </NavLink>
+            </nav>
         </div>
-        <button class="btn btn-sm btn-outline-light border-0 rounded-1" @onclick="ToggleCollapse">
-            <i class="bi bi-list"></i>
-        </button>
+    </div>
+}
+
+<div class="sidebar @(IsCollapsed ? "collapsed" : "") @(IsMobileMenuOpen ? "open" : "")">
+    <!-- Logo / Header -->
+    <div class="sidebar-header">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center shadow-lg" 
+                     style="width: 48px; height: 48px; min-width: 48px; transition: all var(--transition-base);">
+                    <i class="bi-boxes text-white fs-5"></i>
+                </div>
+                @if (!IsCollapsed)
+                {
+                    <div style="animation: fadeIn 0.3s ease-in-out;">
+                        <span class="fw-bold fs-4 text-white">IMS</span>
+                        <div class="small text-light" style="opacity: 0.8; font-size: 0.75rem;">Management System</div>
+                    </div>
+                }
+            </div>
+            <button class="btn btn-sm btn-link text-light p-2 rounded-circle hover-glow" 
+                    @onclick="HandleToggleClick" 
+                    style="border: none; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; transition: all var(--transition-base);">
+                <i class="bi @(IsMobile ? "bi-x-lg" : (IsCollapsed ? "bi-chevron-right" : "bi-chevron-left")) fs-6"></i>
+            </button>
+        </div>
     </div>
 
     <!-- Navigation Links -->
-    <ul class="nav nav-pills flex-column mt-3 mb-auto px-2">
-        <li class="nav-item mb-1">
-            <NavLink class="nav-link sidebar-link"
-                     href=""
-                     Match="NavLinkMatch.All" >
-                <i class="bi-house-door-fill"></i>
-                @if (!IsCollapsed)
+    <nav class="flex-grow-1">
+        <ul class="nav nav-pills flex-column mb-auto px-3" style="list-style: none; padding: 0;">
+            <li class="nav-item mb-2 position-relative">
+                <NavLink class="nav-link sidebar-link"
+                         href=""
+                         Match="NavLinkMatch.All"
+                         @onmouseenter="@(() => ShowTooltipFor = IsCollapsed ? "Home" : "")"
+                         @onmouseleave="@(() => ShowTooltipFor = "")">
+                    <i class="bi-house-door-fill"></i>
+                    @if (!IsCollapsed)
+                    {
+                        <span class="ms-2" style="transition: opacity var(--transition-base);">Home</span>
+                    }
+                </NavLink>
+                @if (IsCollapsed && ShowTooltipFor == "Home")
                 {
-                    <span class="ms-2">Home</span>
+                    <div class="sidebar-tooltip" style="opacity: 1;">Home</div>
                 }
-            </NavLink>
-        </li>
-        <li class="nav-item mb-1">
-            <NavLink class="nav-link sidebar-link"
-                     href="customers" >
-                <i class="bi-people-fill"></i>
-                @if (!IsCollapsed)
+            </li>
+            <li class="nav-item mb-2 position-relative">
+                <NavLink class="nav-link sidebar-link"
+                         href="customers"
+                         @onmouseenter="@(() => ShowTooltipFor = IsCollapsed ? "Customers" : "")"
+                         @onmouseleave="@(() => ShowTooltipFor = "")">
+                    <i class="bi-people-fill"></i>
+                    @if (!IsCollapsed)
+                    {
+                        <span class="ms-2" style="transition: opacity var(--transition-base);">Customers</span>
+                    }
+                </NavLink>
+                @if (IsCollapsed && ShowTooltipFor == "Customers")
                 {
-                    <span class="ms-2">Customers</span>
+                    <div class="sidebar-tooltip" style="opacity: 1;">Customers</div>
                 }
-            </NavLink>
-        </li>
-        <li class="nav-item mb-1">
-            <NavLink class="nav-link sidebar-link"
-                     href="inventories" >
-                <i class="bi-box-seam-fill"></i>
-                @if (!IsCollapsed)
+            </li>
+            <li class="nav-item mb-2 position-relative">
+                <NavLink class="nav-link sidebar-link"
+                         href="inventories"
+                         @onmouseenter="@(() => ShowTooltipFor = IsCollapsed ? "Inventories" : "")"
+                         @onmouseleave="@(() => ShowTooltipFor = "")">
+                    <i class="bi-box-seam-fill"></i>
+                    @if (!IsCollapsed)
+                    {
+                        <span class="ms-2" style="transition: opacity var(--transition-base);">Inventories</span>
+                    }
+                </NavLink>
+                @if (IsCollapsed && ShowTooltipFor == "Inventories")
                 {
-                    <span class="ms-2">Inventories</span>
+                    <div class="sidebar-tooltip" style="opacity: 1;">Inventories</div>
                 }
-            </NavLink>
-        </li>
-        <li class="nav-item mb-1">
-            <NavLink class="nav-link sidebar-link"
-                     href="reports" >
-                <i class="bi-graph-up"></i>
-                @if (!IsCollapsed)
+            </li>
+            <li class="nav-item mb-2 position-relative">
+                <NavLink class="nav-link sidebar-link"
+                         href="reports"
+                         @onmouseenter="@(() => ShowTooltipFor = IsCollapsed ? "Reports" : "")"
+                         @onmouseleave="@(() => ShowTooltipFor = "")">
+                    <i class="bi-graph-up"></i>
+                    @if (!IsCollapsed)
+                    {
+                        <span class="ms-2" style="transition: opacity var(--transition-base);">Reports</span>
+                    }
+                </NavLink>
+                @if (IsCollapsed && ShowTooltipFor == "Reports")
                 {
-                    <span class="ms-2">Reports</span>
+                    <div class="sidebar-tooltip" style="opacity: 1;">Reports</div>
                 }
-            </NavLink>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Footer Section -->
-    <div class="p-3 border-top border-secondary d-flex align-items-center">
-        <i class="bi-person-circle fs-4"></i>
-        @if (!IsCollapsed)
-        {
-            <div class="ms-2">
-                <div class="fw-semibold">Admin</div>
-                <small class="text-secondary">System Manager</small>
+    <div class="sidebar-footer">
+        <div class="d-flex align-items-center @(IsCollapsed ? "justify-content-center" : "")">
+            <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center text-white shadow-lg" 
+                 style="width: 48px; height: 48px; min-width: 48px; transition: all var(--transition-base);">
+                <i class="bi-person-circle fs-5"></i>
             </div>
-        }
+            @if (!IsCollapsed)
+            {
+                <div class="ms-3" style="animation: fadeIn 0.3s ease-in-out;">
+                    <div class="fw-semibold text-white">Admin</div>
+                    <small class="text-light" style="opacity: 0.7; font-size: 0.75rem;">System Manager</small>
+                </div>
+            }
+        </div>
     </div>
-</nav>
+</div>
+
+@if (IsMobile)
+{
+    <div class="sidebar-overlay @(IsMobileMenuOpen ? "active" : "")" @onclick="CloseMobileMenu"></div>
+}
+
+@implements IAsyncDisposable
 
 @code {
     [Inject] BrowserService browserService { get; set; } = default!;
+    private DotNetObjectReference<SideBarMenu>? _dotNetRef;
 
     private bool IsCollapsed;
+    private bool IsMobileMenuOpen;
+    private bool IsMobile;
+    private string ShowTooltipFor = "";
     public int height { get; set; }
     public int width { get; set; }
-
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
+            // load persisted sidebar state
             IsCollapsed = await JSRuntime.InvokeAsync<bool>("loadSidebarState");
-            StateHasChanged();
 
-            await GetDimension();
-            if (width <= 900)
+            // get current dimensions once
+            var dim = await browserService.GetDimensions();
+            width = dim.Width;
+            height = dim.Height;
+
+            // initial mobile logic
+            IsMobile = width <= 992;
+            if (IsMobile)
             {
+                IsCollapsed = true;
+                IsMobileMenuOpen = false;
+            }
+            else if (width <= 1200)
+            {
+                // Auto-collapse on medium screens
                 if (!IsCollapsed)
                 {
-                    await ToggleCollapse();
-                    StateHasChanged();
+                    IsCollapsed = true;
+                    await JSRuntime.InvokeVoidAsync("toggleSidebar", IsCollapsed);
                 }
             }
+
+            // register JS resize handler so we switch to topbar dynamically
+            _dotNetRef = DotNetObjectReference.Create(this);
+            await JSRuntime.InvokeVoidAsync("registerResizeHandler", _dotNetRef);
+
+            StateHasChanged();
         }
+    }
+
+    [JSInvokable]
+    public Task OnBrowserResize(int w, int h)
+    {
+        // update dims and responsive state
+        width = w;
+        height = h;
+
+        var previouslyMobile = IsMobile;
+        IsMobile = width <= 992;
+
+        if (IsMobile)
+        {
+            // for small screens ensure collapsed sidebar and hide the full sidebar menu
+            IsCollapsed = true;
+            IsMobileMenuOpen = false;
+            // ensure main-content CSS is collapsed on small screens
+            _ = JSRuntime.InvokeVoidAsync("toggleSidebar", true);
+        }
+        else
+        {
+            // restore behaviour for larger screens; keep persisted collapsed state
+            // when returning from mobile do not automatically open the mobile menu
+            var shouldAutoCollapse = width <= 1200;
+            if (shouldAutoCollapse && !IsCollapsed)
+            {
+                IsCollapsed = true;
+                _ = JSRuntime.InvokeVoidAsync("toggleSidebar", true);
+            }
+            else if (!shouldAutoCollapse && IsCollapsed)
+            {
+                // leave persisted collapsed state as-is; JS persisted state will control main-content
+            }
+        }
+
+        if (previouslyMobile != IsMobile)
+        {
+            // notify UI change
+            InvokeAsync(StateHasChanged);
+        }
+
+        return Task.CompletedTask;
+    }
+
+    public async Task ToggleMenu()
+    {
+        await ToggleCollapse();
     }
 
     private async Task ToggleCollapse()
     {
-        IsCollapsed = !IsCollapsed;
+        if (IsMobile)
+        {
+            IsMobileMenuOpen = !IsMobileMenuOpen;
+        }
+        else
+        {
+            IsCollapsed = !IsCollapsed;
+            await JSRuntime.InvokeVoidAsync("toggleSidebar", IsCollapsed);
+        }
+        StateHasChanged();
+    }
 
-        await JSRuntime.InvokeVoidAsync("toggleSidebar", IsCollapsed);
+    private void CloseMobileMenu()
+    {
+        IsMobileMenuOpen = false;
+        StateHasChanged();
     }
 
     private async Task GetDimension()
@@ -117,9 +279,28 @@
         width = dimension.Width;
     }
 
-    private async Task Adjust()
+    private async Task HandleToggleClick()
     {
-        IsCollapsed = await JSRuntime.InvokeAsync<bool>("loadSidebarState");
-        StateHasChanged();
+        if (IsMobile)
+        {
+            CloseMobileMenu();
+        }
+        else
+        {
+            await ToggleCollapse();
+        }
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("unregisterResizeHandler");
+        }
+        catch
+        {
+            // ignore JS interop errors during disposal
+        }
+        _dotNetRef?.Dispose();
     }
 }

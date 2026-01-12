@@ -66,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xSZXBvcnRDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/ViewReportModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xWaWV3UmVwb3J0TW9kYWxDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Customers/CustomerList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lcnNcQ3VzdG9tZXJMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -82,8 +86,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xJbnZlbnRvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Reports/ReportsList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXFJlcG9ydHNMaXN0LnJhem9y
+[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/ReportsPage/ReportsList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzUGFnZVxSZXBvcnRzTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Routes.razor]

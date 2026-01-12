@@ -105,7 +105,8 @@
                 CustomerName = customerName,
                 Phone = phone,
                 Address = address,
-                TotalItems = selectedItems.Count()
+                TotalItems = selectedItems.Count(),
+                DeleteFlag = false
             };
 
         int id = await AddCustomerUseCase.ExecuteAsync(newCustomer);

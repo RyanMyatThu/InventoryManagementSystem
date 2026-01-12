@@ -19,6 +19,8 @@ namespace IMS.CoreBusiness
         public string Address { get; set; } = string.Empty;
 
         public int TotalItems { get; set; } = 0;
+
+        public bool DeleteFlag { get; set; } = false;
         public ICollection<CustomerPrice> CustomerPrices { get; set; } = new List<CustomerPrice>();
         public ICollection<Reports> Reports { get; set; } = new List<Reports>();
     }

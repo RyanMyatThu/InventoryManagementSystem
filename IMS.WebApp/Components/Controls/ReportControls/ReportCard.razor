@@ -1,24 +1,65 @@
-﻿@using IMS.WebApp.Components.Pages.Reports
+﻿@using IMS.WebApp.Components.Pages.ReportsPage
 
 @if (report != null)
 {
-
-<div class="card h-100 border-0 shadow-sm report-card hover-shadow">
-    <div class="card-body">
-        <div class="d-flex justify-content-between align-items-start mb-3">
-            <div class="p-2 bg-light rounded">
-                <i class="bi bi-file-earmark-text fs-5 text-secondary"></i>
+    <div class="card h-100 report-card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="rounded-circle bg-info bg-opacity-10 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                    <i class="bi bi-file-earmark-text fs-5 text-info"></i>
+                </div>
+                <span class="badge bg-success">Active</span>
             </div>
-        </div>
 
-            <h6 class="fw-semibold">@report.Customer.CustomerName</h6>
-            <p class="text-muted small mb-0">Report Date: @report.ReportDate.ToString("MMM d, yyyy")</p>
-            <button class="btn btn-sm btn-outline-primary mt-3" id="@report.ReportId">View Report</button>
+            <h6 class="fw-bold mb-2">@report.Customer.CustomerName</h6>
+            <p class="text-muted small mb-3">
+                <i class="bi bi-calendar3 me-1"></i>
+                @report.ReportDate.ToString("MMM d, yyyy")
+            </p>
+
+            <div class="border-top pt-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="text-muted small">Total Amount</span>
+                    <span class="fw-bold text-success">@report.TotalAmount.ToString("N0") MMK</span>
+                </div>
+                @if (report.Profit > 0)
+                {
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-muted small">Profit</span>
+                        <span class="fw-semibold text-primary">@report.Profit.ToString("N0") MMK</span>
+                    </div>
+                }
+            </div>
+
+            <button @onclick="ViewReportAsync" class="btn btn-sm btn-primary w-100 mt-3" id="@report.ReportId" data-bs-toggle="modal" data-bs-target="#ViewReportModal">
+                <i class="bi bi-eye me-1"></i>View Report
+            </button>
+        </div>
     </div>
-</div>
 }
+
+<style>
+    .report-card {
+        transition: all 0.3s ease;
+    }
+
+    .report-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
 @code {
     [Parameter] public Reports report { get; set; } = default!;
 
-    
+    [Parameter] public EventCallback<int> OnViewReport { get; set; }
+
+    private async Task ViewReportAsync()
+    {
+        if (report != null)
+        {
+            await OnViewReport.InvokeAsync(report.ReportId);
+        }
+    }
+
 }

@@ -1,21 +1,30 @@
 ﻿@using IMS.UseCases.CustomerPrices.Interfaces
 @if(this.Item is not null){
     <tr>
-    <td>@Item.InventoryName</td>
-    <td>@Item.Price</td>
-    <td>
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#EditInventoryModal" @onclick=" async () => {
-                await OnProductEdit.InvokeAsync(Item);
-
-            }">
-                <i class="bi bi-pencil"></i>
-        </button>
-            <button type="button" class="btn btn-danger" @onclick="HandleDelete">
-                Delete
-            </button>
-    </td>
-    
-</tr>
+        <td>
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-success bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px;">
+                    <i class="bi bi-box-seam-fill text-success"></i>
+                </div>
+                <span class="fw-semibold">@Item.InventoryName</span>
+            </div>
+        </td>
+        <td>
+            <span class="fw-bold text-success">@Item.Price.ToString("N0")</span>
+        </td>
+        <td class="text-end">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditInventoryModal" @onclick="async () => {
+                    await OnProductEdit.InvokeAsync(Item);
+                }">
+                    <i class="bi bi-pencil me-1"></i>Edit
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-danger" @onclick="HandleDelete">
+                    <i class="bi bi-trash me-1"></i>Delete
+                </button>
+            </div>
+        </td>
+    </tr>
 }
 
 

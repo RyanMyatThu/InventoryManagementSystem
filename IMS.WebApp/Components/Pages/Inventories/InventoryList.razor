@@ -2,12 +2,41 @@
 @inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase;
 @rendermode InteractiveServer
 
-<PageTitle>Inventories</PageTitle>
-<h3>Inventory List</h3>
+<PageTitle>Inventories - Inventory Management System</PageTitle>
 
+<div class="page-header mb-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <h1 class="h3 fw-bold mb-2">Inventory Management</h1>
+            <p class="text-muted mb-0">Manage your inventory items and pricing</p>
+        </div>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddInventoryModal">
+            <i class="bi bi-plus-lg me-2"></i>Add Inventory
+        </button>
+    </div>
+</div>
 
-<InventoryListComponent inventories="inventories" OnProductDelete="LoadList" OnProductEdit="HandleEdit"></InventoryListComponent>
-<button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#AddInventoryModal"><i class="bi bi-plus-lg"></i>   Add</button>
+@if (inventories != null && inventories.Count > 0)
+{
+    <div class="card">
+        <div class="card-body p-0">
+            <InventoryListComponent inventories="inventories" OnProductDelete="LoadList" OnProductEdit="HandleEdit"></InventoryListComponent>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body text-center py-5">
+            <i class="bi bi-box-seam fs-1 text-muted mb-3"></i>
+            <h5 class="text-muted">No inventories yet</h5>
+            <p class="text-muted mb-4">Get started by adding your first inventory item</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddInventoryModal">
+                <i class="bi bi-plus-lg me-2"></i>Add Inventory
+            </button>
+        </div>
+    </div>
+}
 
 <AddInventoryModalComponent OnProductAdded="LoadList" OpenToast="AddProduct" OpenErrorToast="ErrorToast"></AddInventoryModalComponent>
 

@@ -83,16 +83,12 @@ window.loadSidebarState = () => {
     const collapsed = localStorage.getItem("mainCollapsed") === "true";
     const mainContent = document.querySelector(".main-content");
   
+    if (mainContent.classList.contains("collapsed") == false && collapsed == true) {
+        mainContent.classList.add("collapsed");
+    } else if (mainContent.classList.contains("collapsed") == true && collapsed == false) {
+        mainContent.classList.remove("collapsed");
+    } 
 
-
-        if (mainContent.classList.contains("collapsed") == false && collapsed == true) {
-            mainContent.classList.add("collapsed");
-        } else if (mainContent.classList.contains("collapsed") == true && collapsed == false) {
-            mainContent.classList.remove("collapsed");
-        } 
- 
-
-    
     return collapsed;
 };
 
@@ -102,3 +98,33 @@ window.getDimensions = () => {
         height : window.innerHeight
     }
 }
+
+// --- Resize handler registration for Blazor components ---
+// Accepts a DotNetObjectReference and calls its OnBrowserResize method
+window.registerResizeHandler = (dotNetRef) => {
+    try {
+        if (!dotNetRef) return;
+
+        const handler = () => {
+            // call C# method with width and height
+            dotNetRef.invokeMethodAsync('OnBrowserResize', window.innerWidth, window.innerHeight)
+                .catch(err => console.warn('resize invoke failed', err));
+        };
+
+        // Store handler so it can be removed later
+        window.__blazorResizeHandler = handler;
+        window.addEventListener('resize', handler);
+
+        // invoke once immediately so component can initialize based on current size
+        handler();
+    } catch (e) {
+        console.error('registerResizeHandler error', e);
+    }
+};
+
+window.unregisterResizeHandler = () => {
+    if (window.__blazorResizeHandler) {
+        window.removeEventListener('resize', window.__blazorResizeHandler);
+        delete window.__blazorResizeHandler;
+    }
+};

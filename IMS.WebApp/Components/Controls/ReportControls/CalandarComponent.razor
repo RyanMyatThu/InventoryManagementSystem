@@ -1,46 +1,42 @@
 ﻿@using System.Globalization
 
-<div class="card shadow-sm">
-    <div class="card-body">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h5 class="card-title mb-0">@CurrentMonthName @CurrentDate.Year</h5>
-            <div>
-                <button class="btn btn-light btn-sm me-1" @onclick="PrevMonth">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
-                <button class="btn btn-light btn-sm" @onclick="NextMonth">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
-            </div>
+<div class="calendar-wrapper">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title mb-0 fw-bold">@CurrentMonthName @CurrentDate.Year</h5>
+        <div>
+            <button class="btn btn-light btn-sm me-1" @onclick="PrevMonth">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="btn btn-light btn-sm" @onclick="NextMonth">
+                <i class="bi bi-chevron-right"></i>
+            </button>
         </div>
+    </div>
 
-        <div class="calendar-grid container text-center fw-semibold text-muted mb-2">
-            @foreach (var day in DayLabels)
-            {
-                <div>@day</div>
-            }
-        </div>
+    <div class="calendar-grid calendar-header text-center fw-semibold text-muted mb-3">
+        @foreach (var day in DayLabels)
+        {
+            <div class="calendar-day-label">@day</div>
+        }
+    </div>
 
-        <div class="calendar-grid text-center">
-            
-            @for (int i = 0; i < FirstDayOffset; i++)
-            {
-                <div></div>
-            }
-            
-            @for (int d = 1; d <= DaysInMonth; d++)
-            {
-                bool isToday =
-                d == DateTime.Today.Day &&
-                CurrentDate.Month == DateTime.Today.Month &&
-                CurrentDate.Year == DateTime.Today.Year;
+    <div class="calendar-grid calendar-days text-center">
+        @for (int i = 0; i < FirstDayOffset; i++)
+        {
+            <div class="calendar-empty"></div>
+        }
+        
+        @for (int d = 1; d <= DaysInMonth; d++)
+        {
+            bool isToday =
+            d == DateTime.Today.Day &&
+            CurrentDate.Month == DateTime.Today.Month &&
+            CurrentDate.Year == DateTime.Today.Year;
 
-                <button class=" btn btn-sm w-100 @GetDayClass(isToday)">
-                    @d
-                </button>
-            }
-            </div>
-       
+            <button class="calendar-day-btn @GetDayClass(isToday)">
+                @d
+            </button>
+        }
     </div>
 </div>
 

@@ -28,18 +28,18 @@ namespace IMS.Plugins.EFCore
 
         public async Task<Customer?> GetCustomerById(int id)
         {
-            var customer = await _db.Customers.FirstOrDefaultAsync(x => x.CustomerId == id);
+            var customer = await _db.Customers.FirstOrDefaultAsync(x => x.CustomerId == id && !x.DeleteFlag);
             if (customer == null) return null;
             return customer;
         }
 
         public async Task<IEnumerable<Customer>> GetCustomersByName(string name)
         {
-            var query = _db.Customers.Include(c => c.CustomerPrices).ThenInclude(cp => cp.Inventory);
+            var query = _db.Customers.Where(c => !c.DeleteFlag ).Include(c => c.CustomerPrices).ThenInclude(cp => cp.Inventory);
 
             if (string.IsNullOrWhiteSpace(name)) return await query.ToListAsync();
 
-            var customer = await query.Where(x => x.CustomerName == name).ToListAsync();
+            var customer = await query.Where(x => x.CustomerName == name && !x.DeleteFlag).ToListAsync();
             return customer;
         }
 
@@ -50,6 +50,7 @@ namespace IMS.Plugins.EFCore
                 throw new Exception("Invalid ID");
             }
             var customer = await _db.Customers
+                .Where(c => !c.DeleteFlag)
                 .Include(c => c.CustomerPrices).ThenInclude(cp => cp.Inventory).FirstOrDefaultAsync(c => c.CustomerId == customerId) ?? throw new Exception("Customer data not found");
             return customer.CustomerPrices
                 .Select(cp => (cp.Inventory, cp.SellPrice))
@@ -62,7 +63,7 @@ namespace IMS.Plugins.EFCore
             {
                 throw new Exception("Updated customer is null");
             }
-            var existing = await _db.Customers.FirstOrDefaultAsync(x => x.CustomerId == customer.CustomerId);
+            var existing = await _db.Customers.FirstOrDefaultAsync(x => x.CustomerId == customer.CustomerId && !x.DeleteFlag);
             if(existing == null)
             {
                 throw new Exception("Customer not found");
@@ -87,7 +88,7 @@ namespace IMS.Plugins.EFCore
             
                 throw new Exception("Customer not found");
             }
-            _db.Remove(customer);
+            customer.DeleteFlag = true;
             return await _db.SaveChangesAsync();
         }
     }
