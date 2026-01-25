@@ -5,117 +5,164 @@
 @using IMS.WebApp.Culture
 @inject IJSRuntime JSRuntime
 
-@if(Report != null){
-    <div class="modal d-block" id="ViewReportModal" tabindex="-1" style="background: rgba(0,0,0,0.5);" aria-labelledby="ViewReportModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div>
-                        <h5 class="modal-title mb-0" id="ViewReportModalTitle">
-                            @if (Report is null)
-                            {
-                                <span>Report</span>
-                            }
-                            else
-                            {
-                                <span>Report #@Report.ReportId</span>
-                                <div class="small text-muted">@Report.ReportDate.ToString("MMMM dd, yyyy")</div>
-                            }
-                        </h5>
-                        @if (Report is not null)
-                        {
-                            <div class="small text-secondary">
-                                @Report.Customer?.CustomerName
-                                @if (!string.IsNullOrWhiteSpace(Report.Customer?.Address))
+<div class="modal fade @(Report == null ? "d-none" : "")" id="ViewReportModal" tabindex="-1" style="background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);" aria-labelledby="ViewReportModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content" style="border: none; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+            @* Enterprise Header with Gradient *@
+            <div class="modal-header" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; border-bottom: none; padding: 2rem 2rem 1.5rem 2rem; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; transform: translate(30%, -30%);"></div>
+                <div style="position: relative; z-index: 1; flex: 1;">
+                    <div class="d-flex align-items-start justify-content-between mb-3">
+                        <div>
+                            <h5 class="modal-title mb-2" id="ViewReportModalTitle" style="font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; margin: 0;">
+                                @if (Report is null)
                                 {
-                                    <div class="text-muted">@Report.Customer.Address</div>
+                                    <span>Report Details</span>
                                 }
-                            </div>
-                        }
+                                else
+                                {
+                                    <span>Report #@Report.ReportId</span>
+                                }
+                            </h5>
+                            @if (Report is not null)
+                            {
+                                <div style="font-size: 0.875rem; opacity: 0.9; font-weight: 400; margin-top: 0.25rem;">
+                                    <i class="bi bi-calendar3" style="margin-right: 0.5rem;"></i>@Report.ReportDate.ToString("MMMM dd, yyyy")
+                                </div>
+                            }
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-light btn-sm" @onclick="PrintAsync" title="Print" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white; backdrop-filter: blur(10px);">
+                                <i class="bi bi-printer" style="margin-right: 0.5rem;"></i>Print
+                            </button>
+                            <button class="btn btn-light btn-sm" @onclick="ExportCsvAsync" title="Export CSV" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white; backdrop-filter: blur(10px);">
+                                <i class="bi bi-download" style="margin-right: 0.5rem;"></i>Export
+                            </button>
+                        </div>
                     </div>
-
-                    <div class="ms-auto d-flex gap-2">
-                        <button class="btn btn-outline-secondary btn-sm" @onclick="PrintAsync" title="Print">Print</button>
-                        <button class="btn btn-outline-secondary btn-sm" @onclick="ExportCsvAsync" title="Export CSV">Export</button>
-                        <button id="close-view-modal" type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-                <div class="modal-body">
-                    @if (Report is null)
+                    @if (Report is not null && Report.Customer is not null)
                     {
-                        <div class="text-center py-4">No report selected.</div>
+                        <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: var(--radius-md); padding: 1rem; border: 1px solid rgba(255,255,255,0.2);">
+                            <div style="font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">
+                                <i class="bi bi-person-circle" style="margin-right: 0.5rem;"></i>@Report.Customer.CustomerName
+                            </div>
+                            @if (!string.IsNullOrWhiteSpace(Report.Customer.Address))
+                            {
+                                <div style="font-size: 0.875rem; opacity: 0.85; margin-top: 0.25rem;">
+                                    <i class="bi bi-geo-alt" style="margin-right: 0.5rem;"></i>@Report.Customer.Address
+                                </div>
+                            }
+                        </div>
                     }
-                    else
-                    {
-                        <div class="row mb-3">
-                            <div class="col-md-8">
-                                <div><strong>Report ID: </strong>@Report.ReportId</div>
-                                <div><strong>Customer ID: </strong>@Report.CustomerId</div>
+                </div>
+            </div>
+
+            <div class="modal-body" style="padding: 2rem; background: #f8fafc;">
+                @if (Report is null)
+                {
+                    <div class="text-center py-5" style="color: var(--text-secondary);">
+                        <i class="bi bi-file-earmark-text" style="font-size: 3rem; opacity: 0.3; margin-bottom: 1rem; display: block;"></i>
+                        <p style="font-size: 1.125rem; margin: 0;">No report selected</p>
+                    </div>
+                }
+                else
+                {
+                    @* Report Metadata Section *@
+                    <div style="background: white; border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.5rem;">Report ID</div>
+                                <div style="font-size: 1.125rem; font-weight: 600; color: var(--text-primary);">#@Report.ReportId</div>
                             </div>
-                            <div class="col-md-4 text-md-end text-muted">
-                                <div><strong>Date:</strong> @Report.ReportDate.ToString("g")</div>
-                                <div><strong>Total Vouchers:</strong> @(Report.Vouchers?.Count ?? 0)</div>
+                            <div class="col-md-3">
+                                <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.5rem;">Customer ID</div>
+                                <div style="font-size: 1.125rem; font-weight: 600; color: var(--text-primary);">#@Report.CustomerId</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.5rem;">Date & Time</div>
+                                <div style="font-size: 1.125rem; font-weight: 600; color: var(--text-primary);">@Report.ReportDate.ToString("g")</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.5rem;">Total Items</div>
+                                <div style="font-size: 1.125rem; font-weight: 600; color: var(--text-primary);">@(Report.Vouchers?.Count ?? 0)</div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="table-responsive">
-                            <table class="table table-sm">
-                                <thead class="table-light">
+                    @* Items Table Section *@
+                    <div style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+                        <div style="padding: 1.25rem 1.5rem; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-bottom: 2px solid var(--border-color);">
+                            <h6 style="margin: 0; font-weight: 600; color: var(--text-primary); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em;">
+                                <i class="bi bi-list-ul" style="margin-right: 0.5rem;"></i>Items & Services
+                            </h6>
+                        </div>
+                        <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                            <table class="table" style="margin: 0; border-collapse: separate; border-spacing: 0;">
+                                <thead style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; position: sticky; top: 0; z-index: 10;">
                                     <tr>
-                                        <th class="w-50">Item / Description</th>
-                                        <th class="text-end">Qty</th>
-                                        <th class="text-end">Unit Price</th>
-                                        <th class="text-end">SubTotal</th>
+                                        <th style="padding: 1rem 1.5rem; font-weight: 600; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.05em; border: none;">Item / Description</th>
+                                        <th style="padding: 1rem 1.5rem; font-weight: 600; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.05em; border: none; text-align: right; width: 120px;">Quantity</th>
+                                        <th style="padding: 1rem 1.5rem; font-weight: 600; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.05em; border: none; text-align: right; width: 150px;">Unit Price</th>
+                                        <th style="padding: 1rem 1.5rem; font-weight: 600; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.05em; border: none; text-align: right; width: 150px;">Subtotal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @{
+                                        var index = 0;
+                                    }
                                     @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
                                     {
-                                        <tr>
-                                            <td>@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</td>
-                                            <td class="text-end">@v.Quantity</td>
-                                            <td class="text-end">@v.SellPrice.ToString("C", mm.NumberFormatInfo)</td>
-                                            <td class="text-end">@((v.SellPrice * v.Quantity).ToString("C", mm.NumberFormatInfo))</td>
+                                        <tr style="border-bottom: 1px solid var(--border-color); transition: all 0.2s ease; @(index % 2 == 0 ? "background: #fff;" : "background: #f8fafc;")">
+                                            <td style="padding: 1.25rem 1.5rem; font-weight: 500; color: var(--text-primary);">
+                                                <div style="font-size: 0.9375rem;">@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</div>
+                                                @if (v.InventoryId > 0)
+                                                {
+                                                    <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">ID: @v.InventoryId</div>
+                                                }
+                                            </td>
+                                            <td style="padding: 1.25rem 1.5rem; text-align: right; font-weight: 500; color: var(--text-primary);">@v.Quantity</td>
+                                            <td style="padding: 1.25rem 1.5rem; text-align: right; font-weight: 500; color: var(--text-primary);">@v.SellPrice.ToString("C", mm.NumberFormatInfo)</td>
+                                            <td style="padding: 1.25rem 1.5rem; text-align: right; font-weight: 600; color: var(--text-primary);">@((v.SellPrice * v.Quantity).ToString("C", mm.NumberFormatInfo))</td>
                                         </tr>
+                                        index++;
                                     }
                                 </tbody>
                             </table>
                         </div>
+                    </div>
 
-                        <div class="row mt-3">
-                            <div class="col-md-6">
-                                @* If you have additional textual fields add here *@
-                            </div>
-
-                            <div class="col-md-6">
+                    @* Summary Section *@
+                    <div style="background: white; border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4">
                                 @{
                                     var profit = Report.Profit;
                                     var total = Report.TotalAmount;
                                 }
-                                <div class="d-flex justify-content-end">
-                                  
-                                    <div class="me-4 text-end">
-                                        <div class="small text-muted">Profit</div>
-                                        <div class="fw-semibold">@profit.ToString("C", mm.NumberFormatInfo)</div>
+                                <div style="border-top: 2px solid var(--border-color); padding-top: 1.5rem;">
+                                    <div class="d-flex justify-content-between align-items-center mb-3" style="padding: 0.75rem 0;">
+                                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Profit</div>
+                                        <div style="font-size: 1.125rem; font-weight: 600; color: var(--success-color);">@profit.ToString("C", mm.NumberFormatInfo)</div>
                                     </div>
-                                    <div class="text-end">
-                                        <div class="small text-muted">Total</div>
-                                        <div class="fs-5 fw-bold">@total.ToString("C", mm.NumberFormatInfo)</div>
+                                    <div class="d-flex justify-content-between align-items-center" style="padding: 1rem; background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); border-radius: var(--radius-md); margin-top: 0.5rem;">
+                                        <div style="font-size: 0.875rem; color: rgba(255,255,255,0.9); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Total Amount</div>
+                                        <div style="font-size: 1.5rem; font-weight: 700; color: white; letter-spacing: -0.02em;">@total.ToString("C", mm.NumberFormatInfo)</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    }
-                </div>
+                    </div>
+                }
+            </div>
 
-                <div class="modal-footer">
-                    <button id="close-view-modal" type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-                </div>
+            <div class="modal-footer" style="background: white; border-top: 1px solid var(--border-color); padding: 1.25rem 2rem; border-radius: 0 0 var(--radius-xl) var(--radius-xl);">
+                <button id="close-view-modal" type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="min-width: 100px; font-weight: 500;">Close</button>
             </div>
         </div>
     </div>
-    }
+</div>
+  
 @code {
 
     [Parameter]

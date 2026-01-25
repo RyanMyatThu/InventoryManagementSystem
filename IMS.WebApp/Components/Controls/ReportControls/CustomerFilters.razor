@@ -1,6 +1,5 @@
 ﻿<div class="card shadow-sm">
     <div class="card-body">
-        <h5 class="card-title mb-4">Filter by Customer</h5>
          @if(customerList != null && customerList.Count > 0){
         <div class="d-flex flex-wrap gap-2">
            
@@ -34,6 +33,7 @@
         if (id == Selected)
         {
             await OnCustomerSelected.InvokeAsync(0);
+            Selected = 0;
             return;
         }
         Selected = id;
