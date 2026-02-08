@@ -1138,3 +1138,13 @@ a.mobile-topbar-nav-item.active {
         background-position: 200% 0;
     }
 }
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #printable-report {
+        display:block;
+    }
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IMS.Plugins.EFCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89420d0a265256ee6df5ad7626edca944a39f777")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80f5ce13ce6e60d2f2cae22fa9875b614a055cfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("IMS.Plugins.EFCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IMS.Plugins.EFCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

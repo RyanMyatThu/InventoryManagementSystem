@@ -128,3 +128,26 @@ window.unregisterResizeHandler = () => {
         delete window.__blazorResizeHandler;
     }
 };
+
+window.printElementById = async (id, reportId) => {
+    const content = document.getElementById(id);
+    if (!content) return;
+
+    content.style.display = 'block';
+
+    const win = window.open('', '', 'width=900,height=600');
+
+    document.querySelectorAll('link[rel=stylesheet], style')
+        .forEach(s => win.document.write(s.outerHTML));
+
+    win.document.write(`<html><head><title>Report #${reportId}</title></head><body>`);
+    win.document.write(content.outerHTML);
+    win.document.write('</body></html>');
+
+    win.document.close();
+    win.focus();
+    win.print();
+    win.close();
+
+    content.style.display = 'none';
+};

@@ -7,7 +7,8 @@
 
 <div class="modal fade @(Report == null ? "d-none" : "")" id="ViewReportModal" tabindex="-1" style="background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);" aria-labelledby="ViewReportModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content" style="border: none; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+
+        <div class="modal-content" id="printableSection" style="border: none; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
             @* Enterprise Header with Gradient *@
             <div class="modal-header" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; border-bottom: none; padding: 2rem 2rem 1.5rem 2rem; position: relative; overflow: hidden;">
                 <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; transform: translate(30%, -30%);"></div>
@@ -141,7 +142,7 @@
                                     var total = Report.TotalAmount;
                                 }
                                 <div style="border-top: 2px solid var(--border-color); padding-top: 1.5rem;">
-                                    <div class="d-flex justify-content-between align-items-center mb-3" style="padding: 0.75rem 0;">
+                                    <div id="profitCell" class="d-flex justify-content-between align-items-center mb-3" style="padding: 0.75rem 0;">
                                         <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Profit</div>
                                         <div style="font-size: 1.125rem; font-weight: 600; color: var(--success-color);">@profit.ToString("C", mm.NumberFormatInfo)</div>
                                     </div>
@@ -162,6 +163,48 @@
         </div>
     </div>
 </div>
+
+<div id="printable-report" style="display: none;">
+    <h2>Report #@Report?.ReportId</h2>
+    @if (Report?.Customer != null)
+    {
+        <div>
+            <strong>Customer:</strong> @Report.Customer.CustomerName<br />
+            @if (!string.IsNullOrWhiteSpace(Report.Customer.Address))
+            {
+                <strong>Address:</strong> 
+                @Report.Customer.Address
+            }
+        </div>
+    }
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+        <thead>
+            <tr>
+                <th style="border-bottom: 1px solid #000; text-align: left; padding: 0.25rem;">Item / Description</th>
+                <th style="border-bottom: 1px solid #000; text-align: right; padding: 0.25rem;">Quantity</th>
+                <th style="border-bottom: 1px solid #000; text-align: right; padding: 0.25rem;">Unit Price</th>
+                <th style="border-bottom: 1px solid #000; text-align: right; padding: 0.25rem;">Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var v in Report?.Vouchers ?? Enumerable.Empty<Vouchers>())
+            {
+                <tr>
+                    <td style="padding: 0.25rem;">@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</td>
+                    <td style="padding: 0.25rem; text-align: right;">@v.Quantity</td>
+                    <td style="padding: 0.25rem; text-align: right;">@v.SellPrice.ToString("C", mm.NumberFormatInfo)</td>
+                    <td style="padding: 0.25rem; text-align: right;">@((v.SellPrice * v.Quantity).ToString("C", mm.NumberFormatInfo))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div style="margin-top: 1rem; text-align: right; font-weight: bold; font-size: 1.25rem;">
+        Total Amount: @Report?.TotalAmount.ToString("C", mm.NumberFormatInfo)
+    </div>
+</div>
+
   
 @code {
 
@@ -172,8 +215,7 @@
 
     private Task PrintAsync()
     {
-        // rely on browser print; backend handled by user
-        return JSRuntime.InvokeVoidAsync("print").AsTask();
+       return JSRuntime.InvokeVoidAsync("printElementById", "printable-report", Report.ReportId).AsTask();
     }
 
     private async Task ExportCsvAsync()
