@@ -204,7 +204,100 @@
         Total Amount: @Report?.TotalAmount.ToString("C", mm.NumberFormatInfo)
     </div>
 </div>
+<div id="print-voucher-template" class="print-only">
+    @if (Report != null)
+    {
+        <div class="voucher-container">
+            <div class="voucher-header">
+                <div class="title-container">
+                    <img src="/Pictures/logo.jpg" alt="Aunty Aye Logo" class="header-logo" />
 
+                    <div class="title-text-group">
+                        <div class="voucher-title-mm">အန်တီအေး</div>
+                        <div class="burmese-green-text">
+                            မုန့်ဟင်းခါး ၊ နန်းကြီး ၊ ခေါက်ဆွဲ ဖြန့်ချီရေး
+                        </div>
+                        <div class="burmese-green-subtext">
+                            စမ်းချောင်းမြို့နယ်၊ ရန်ကုန်မြို့။
+                        </div>
+                        <div class="phone-numbers">
+                            <span class="phone-icon">📞</span> 09-4211-44189, 09-795-414271, 09-966-130126
+                        </div>
+                    </div>
+
+                    <img src="/Pictures/logo.jpg" alt="Aunty Aye Logo" class="header-logo" />
+                </div>
+            </div>
+
+            <div class="customer-info-section">
+                <div class="info-row">
+                    <span class="label-red">Name:</span>
+                    <span class="dotted-line">@Report.Customer?.CustomerName</span>
+                    <span class="label-red">Date:</span>
+                    <span class="dotted-line">@Report.ReportDate.ToString("dd/MM/yyyy")</span>
+                </div>
+                <div class="info-row">
+                    <span class="label-red">Address:</span>
+                    <span class="dotted-line">@Report.Customer?.Address</span>
+                    <span class="label-red">Phone:</span>
+                    <span class="dotted-line">@Report.Customer?.Phone</span>
+                </div>
+            </div>
+
+            <table class="voucher-table">
+                <thead>
+                    <tr>
+                        <th>Particular</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            {
+                                <div>@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</div>
+                            }
+                        </td>
+                        <td style="text-align:center">
+                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            {
+                                <div>@v.Quantity</div>
+                            }
+                        </td>
+                        <td style="text-align:right">
+                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            {
+                                <div>@v.SellPrice.ToString("N0")</div>
+                            }
+                        </td>
+                        <td style="text-align:right">
+                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            {
+                                <div>@((v.SellPrice * v.Quantity).ToString("N0"))</div>
+                            }
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="voucher-summary-container">
+                <div class="summary-box">
+                    <div class="summary-line">
+                        <span>Total Amount</span>
+                        <span>@Report.TotalAmount.ToString("N0")</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Balance</span>
+                        <span>@Report.TotalAmount.ToString("N0")</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
   
 @code {
 
@@ -213,9 +306,9 @@
 
     private Myanmar mm = new Myanmar();
 
-    private Task PrintAsync()
+    private async Task PrintAsync()
     {
-       return JSRuntime.InvokeVoidAsync("printElementById", "printable-report", Report.ReportId).AsTask();
+        await JSRuntime.InvokeVoidAsync("eval", "window.print()");
     }
 
     private async Task ExportCsvAsync()

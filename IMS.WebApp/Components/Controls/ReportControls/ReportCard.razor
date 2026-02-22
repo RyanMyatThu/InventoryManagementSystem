@@ -1,6 +1,6 @@
 ﻿@using IMS.WebApp.Components.Pages.ReportsPage
 
-@if (report != null)
+@if (Report != null)
 {
     <div class="card h-100 report-card">
         <div class="card-body">
@@ -10,27 +10,27 @@
                 </div>
             </div>
 
-            <h6 class="fw-bold mb-2">@report.Customer.CustomerName</h6>
+            <h6 class="fw-bold mb-2">@Report.Customer.CustomerName</h6>
             <p class="text-muted small mb-3">
                 <i class="bi bi-calendar3 me-1"></i>
-                @report.ReportDate.ToString("MMM d, yyyy")
+                @Report.ReportDate.ToString("MMM d, yyyy")
             </p>
 
             <div class="border-top pt-3">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <span class="text-muted small">Total Amount</span>
-                    <span class="fw-bold text-success">@report.TotalAmount.ToString("N0") MMK</span>
+                    <span class="fw-bold text-success">@Report.TotalAmount.ToString("N0") MMK</span>
                 </div>
-                @if (report.Profit > 0)
+                @if (Report.Profit > 0)
                 {
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="text-muted small">Profit</span>
-                        <span class="fw-semibold text-primary">@report.Profit.ToString("N0") MMK</span>
+                        <span class="fw-semibold text-primary">@Report.Profit.ToString("N0") MMK</span>
                     </div>
                 }
             </div>
 
-            <button @onclick="ViewReportAsync" class="btn btn-sm btn-primary w-100 mt-3" id="@report.ReportId" data-bs-toggle="modal" data-bs-target="#ViewReportModal">
+            <button @onclick="ViewReportAsync" class="btn btn-sm btn-primary w-100 mt-3" id="@Report.ReportId" data-bs-toggle="modal" data-bs-target="#ViewReportModal">
                 <i class="bi bi-eye me-1"></i>View Report
             </button>
         </div>
@@ -49,15 +49,15 @@
 </style>
 
 @code {
-    [Parameter] public Reports report { get; set; } = default!;
+    [Parameter] public Reports Report { get; set; } = default!;
 
     [Parameter] public EventCallback<int> OnViewReport { get; set; }
 
     private async Task ViewReportAsync()
     {
-        if (report != null)
+        if (Report != null)
         {
-            await OnViewReport.InvokeAsync(report.ReportId);
+            await OnViewReport.InvokeAsync(Report.ReportId);
         }
     }
 

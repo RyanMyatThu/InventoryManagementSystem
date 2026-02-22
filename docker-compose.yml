@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  ims-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ims-app
+    ports:
+      - "5000:8080"
+    depends_on:
+      - ims-db
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=Server=ims-db;Database=IMSDB;User=sa;Password=YourStrongPassword123;TrustServerCertificate=True;
+    networks:
+      - ims-network
+
+  ims-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: ims-db
+    environment:
+      SA_PASSWORD: "sasa@123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ims-data:/var/opt/mssql
+      - ./backup:/var/opt/mssql/backup
+    networks:
+      - ims-network
+
+networks:
+  ims-network:
+
+volumes:
+  ims-data:
+
+ 

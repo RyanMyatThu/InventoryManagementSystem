@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3D7+bu69UG8=",
+  "dgSpecHash": "lTShYiUno8w=",
   "success": true,
   "projectFilePath": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\IMS.WebApp.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
     "C:\\Users\\ryanm\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\ryanm\\.nuget\\packages\\syncfusion.blazor.buttons\\32.1.21\\syncfusion.blazor.buttons.32.1.21.nupkg.sha512",
     "C:\\Users\\ryanm\\.nuget\\packages\\syncfusion.blazor.calendars\\32.1.21\\syncfusion.blazor.calendars.32.1.21.nupkg.sha512",

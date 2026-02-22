@@ -1134,17 +1134,179 @@ a.mobile-topbar-nav-item.active {
     0% {
         background-position: -200% 0;
     }
+
     100% {
         background-position: 200% 0;
     }
 }
+/* Hide voucher on normal screen */
+.print-only {
+    display: none;
+}
 
+/* PRINT MODE & STYLING */
 @media print {
+    /* Standard reset for print visibility */
     body * {
         visibility: hidden;
     }
 
-    #printable-report {
-        display:block;
+    #print-voucher-template, #print-voucher-template * {
+        visibility: visible;
+    }
+
+    #print-voucher-template {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white;
+        font-family: 'Segoe UI', 'Pyidaungsu', 'Myanmar Text', sans-serif;
+        -webkit-print-color-adjust: exact; /* Crucial for printing gradients/colors */
+        print-color-adjust: exact;
+    }
+
+    /* Yellow Header Section with Gradient */
+    .voucher-header {
+        background: linear-gradient(to bottom, #FFD700 0%, #FFD700 80%, #ffffff 100%);
+        padding: 20px 10px 30px 10px;
+        text-align: center;
+        border-bottom: 2px solid #D32F2F;
+    }
+
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .header-logo {
+        height: 70px;
+        width: auto;
+        mix-blend-mode: multiply;
+    }
+
+    /* Text Groups */
+    .voucher-title-mm {
+        color: #D32F2F;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    .burmese-green-text {
+        color: #1B5E20;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .burmese-green-subtext, .phone-numbers {
+        color: #1B5E20;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 4px;
+    }
+
+    .phone-icon {
+        background-color: #1B5E20;
+        color: white;
+        padding: 0px 5px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+
+    /* Customer Info & Red Dotted Lines */
+    .customer-info-section {
+        padding: 20px 15px;
+    }
+
+    .info-row {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 12px;
+        gap: 10px;
+    }
+
+    .label-red {
+        color: #D32F2F;
+        font-weight: bold;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .dotted-line {
+        flex-grow: 1;
+        border-bottom: 1.5px dotted #D32F2F;
+        min-height: 1.2em;
+        padding-left: 8px;
+        color: #333;
+    }
+
+    /* Table Styling: Rounded Boxes */
+    .voucher-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 6px;
+        margin-top: 5px;
+    }
+
+        .voucher-table th {
+            background: linear-gradient(to bottom, #FFD700, #FBC02D);
+            color: #D32F2F;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            border: 1px solid #aaa;
+            font-weight: bold;
+        }
+
+        .voucher-table td {
+            border: 1.5px solid #aaa;
+            border-radius: 12px;
+            padding: 12px;
+            height: 400px; /* Vertical box look */
+            vertical-align: top;
+            background: white;
+        }
+
+    /* Totals Summary */
+    .voucher-summary-container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    .summary-box {
+        width: 280px;
+    }
+
+    .summary-line {
+        display: flex;
+        justify-content: space-between;
+        border: 1.5px solid #aaa;
+        border-radius: 20px;
+        padding: 6px 18px;
+        margin-bottom: 6px;
+        color: #D32F2F;
+        font-weight: bold;
+    }
+
+    /* Footer & Signature */
+    .voucher-footer {
+        text-align: center;
+        color: #D32F2F;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .signature-line {
+        margin-top: 30px;
+        color: #D32F2F;
+        font-style: italic;
+        padding-left: 20px;
     }
 }
