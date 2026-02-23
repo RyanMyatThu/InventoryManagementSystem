@@ -11,97 +11,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IMS.WebApp
 build_property.RootNamespace = IMS.WebApp
-build_property.ProjectDir = C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp\
+build_property.ProjectDir = /Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ryanm\Documents\GitHub\InventoryManagementSystem\IMS.WebApp
+build_property.MSBuildProjectDirectory = /Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/AddInventoryModalComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xBZGRJbnZlbnRvcnlNb2RhbENvbXBvbmVudC5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/AddInventoryModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9BZGRJbnZlbnRvcnlNb2RhbENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/CustomersControls/AddCustomerModalComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xDdXN0b21lcnNDb250cm9sc1xBZGRDdXN0b21lck1vZGFsQ29tcG9uZW50LnJhem9y
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/CustomersControls/AddCustomerModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9DdXN0b21lcnNDb250cm9scy9BZGRDdXN0b21lck1vZGFsQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/CustomersControls/EditCustomerModalComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xDdXN0b21lcnNDb250cm9sc1xFZGl0Q3VzdG9tZXJNb2RhbENvbXBvbmVudC5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/CustomersControls/EditCustomerModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9DdXN0b21lcnNDb250cm9scy9FZGl0Q3VzdG9tZXJNb2RhbENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/EditInventoryModalComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xFZGl0SW52ZW50b3J5TW9kYWxDb21wb25lbnQucmF6b3I=
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/EditInventoryModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9FZGl0SW52ZW50b3J5TW9kYWxDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/InventoryListComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xJbnZlbnRvcnlMaXN0Q29tcG9uZW50LnJhem9y
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/InventoryListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9JbnZlbnRvcnlMaXN0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/InventoryListItemComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xJbnZlbnRvcnlMaXN0SXRlbUNvbXBvbmVudC5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/InventoryListItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9JbnZlbnRvcnlMaXN0SXRlbUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/AddNewReportModalComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xBZGROZXdSZXBvcnRNb2RhbENvbXBvbmVudC5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/AddNewReportModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9SZXBvcnRDb250cm9scy9BZGROZXdSZXBvcnRNb2RhbENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/CalandarComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xDYWxhbmRhckNvbXBvbmVudC5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/CalandarComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9SZXBvcnRDb250cm9scy9DYWxhbmRhckNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/CustomerFilters.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xDdXN0b21lckZpbHRlcnMucmF6b3I=
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/CustomerFilters.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9SZXBvcnRDb250cm9scy9DdXN0b21lckZpbHRlcnMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/ReportCard.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xSZXBvcnRDYXJkLnJhem9y
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/ReportCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9SZXBvcnRDb250cm9scy9SZXBvcnRDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/ViewReportModalComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xSZXBvcnRDb250cm9sc1xWaWV3UmVwb3J0TW9kYWxDb21wb25lbnQucmF6b3I=
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Controls/ReportControls/ViewReportModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250cm9scy9SZXBvcnRDb250cm9scy9WaWV3UmVwb3J0TW9kYWxDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Customers/CustomerList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lcnNcQ3VzdG9tZXJMaXN0LnJhem9y
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Customers/CustomerList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DdXN0b21lcnMvQ3VzdG9tZXJMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Inventories/InventoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xJbnZlbnRvcnlMaXN0LnJhem9y
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/Inventories/InventoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnZlbnRvcmllcy9JbnZlbnRvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/ReportsPage/ReportsList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzUGFnZVxSZXBvcnRzTGlzdC5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Pages/ReportsPage/ReportsList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXBvcnRzUGFnZS9SZXBvcnRzTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-rkfayx65e9
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ukh6j5tucy
 
-[C:/Users/ryanm/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Layout/SideBarMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2lkZUJhck1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-64k084vwl7
+[/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.WebApp/Components/Layout/SideBarMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvU2lkZUJhck1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-j70md9x2vg

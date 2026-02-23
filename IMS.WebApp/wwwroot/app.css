@@ -859,130 +859,68 @@ a.mobile-topbar-nav-item.active {
 }
 
 /* Calendar Styles */
-/* Updated to prevent overflow, keep cells square, and remain responsive.
-   Uses aspect-ratio so cells scale with available container width. */
 .calendar-wrapper {
     box-sizing: border-box;
     width: 100%;
-    max-width: 720px; /* upper bound so calendar doesn't grow unreasonably */
-    margin: 0 auto; /* center in its parent/card */
+    max-width: 720px;
+    margin: 0 auto;
     padding: 0.5rem;
-    overflow: hidden;
 }
 
+/* Base grid used by BOTH header and days */
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem;
-    align-items: start;
-}
-
-/* header labels */
-.calendar-header {
-    margin-bottom: 1rem;
+    gap: 0.5rem; /* Consistency is key here */
+    width: 100%;
 }
 
 .calendar-day-label {
-    padding: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: var(--text-secondary);
-    font-weight: 600;
-    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 0; /* Remove horizontal padding to prevent shift */
 }
 
-/* make day cells scale fluidly and stay square */
-.calendar-days {
-    gap: 0.5rem;
-}
-
-/* remove hard min-width/min-height; use aspect-ratio for squares and allow grid to compress */
-.calendar-empty,
-.calendar-day-btn {
+.calendar-day-btn, .calendar-empty {
     width: 100%;
-    aspect-ratio: 1 / 1; /* keep cells square */
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
     border-radius: var(--radius-md);
-    transition: all var(--transition-base);
     border: 1px solid var(--border-color);
     background: #fff;
-    font-weight: 500;
     cursor: pointer;
-    box-sizing: border-box;
-    min-height: 0;
-    min-width: 0;
+    font-size: 0.9rem;
+    /* Prevent text from pushing the box size */
+    min-width: 0; 
+    overflow: hidden; 
 }
 
-/* hover / primary styles */
+/* Visibility for empty cells to keep the grid shape consistent */
+.calendar-empty {
+    border: transparent;
+    background: transparent;
+    cursor: default;
+}
+
+/* Hover & Active States */
 .calendar-day-btn:hover:not(.btn-primary) {
     background: var(--light-bg);
     border-color: var(--primary-color);
-    transform: scale(1.03);
-    box-shadow: var(--shadow-sm);
 }
 
 .calendar-day-btn.btn-primary {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: var(--primary-color);
     color: #fff;
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-md);
 }
 
-/* Responsive scaling: smaller cells on narrow screens, comfortable size on larger */
+/* Responsive Gaps */
 @media (min-width: 576px) {
-    .calendar-wrapper {
-        padding: 1rem;
-    }
-    
-    .calendar-grid {
-        gap: 0.75rem;
-    }
-    
-    .calendar-day-label {
-        padding: 0.75rem;
-        font-size: 0.9375rem;
-    }
-    
-    .calendar-empty,
-    .calendar-day-btn {
-        padding: 0.75rem;
-        aspect-ratio: 1 / 1;
-    }
-}
-
-@media (min-width: 768px) {
-    .calendar-wrapper {
-        padding: 1.5rem;
-    }
-    
-    .calendar-grid {
-        gap: 1rem;
-    }
-    
-    .calendar-day-label {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    
-    .calendar-empty,
-    .calendar-day-btn {
-        padding: 1rem;
-        font-size: 1rem;
-        aspect-ratio: 1 / 1;
-    }
-}
-
-@media (min-width: 992px) {
-    .calendar-grid {
-        gap: 1.25rem;
-    }
-    
-    .calendar-empty,
-    .calendar-day-btn {
-        aspect-ratio: 1 / 1;
-    }
+    .calendar-grid { gap: 0.75rem; }
+    .calendar-day-label { font-size: 0.875rem; }
 }
 
 /* Page Headers */

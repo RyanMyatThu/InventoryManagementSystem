@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: ims-app
     ports:
-      - "5000:8080"
+      - "5001:8080"
     depends_on:
       - ims-db
     environment:
