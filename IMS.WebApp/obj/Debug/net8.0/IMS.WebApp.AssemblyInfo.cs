@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IMS.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a9b5b25be72b7b59d7c0c95975f047ea047610a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+722fbe6ad415bf7ca18377a0c76e9607e35a0891")]
 [assembly: System.Reflection.AssemblyProductAttribute("IMS.WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IMS.WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

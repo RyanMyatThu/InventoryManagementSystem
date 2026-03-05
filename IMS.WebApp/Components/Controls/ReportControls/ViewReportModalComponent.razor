@@ -163,50 +163,10 @@
         </div>
     </div>
 </div>
-
-<div id="printable-report" style="display: none;">
-    <h2>Report #@Report?.ReportId</h2>
-    @if (Report?.Customer != null)
-    {
-        <div>
-            <strong>Customer:</strong> @Report.Customer.CustomerName<br />
-            @if (!string.IsNullOrWhiteSpace(Report.Customer.Address))
-            {
-                <strong>Address:</strong> 
-                @Report.Customer.Address
-            }
-        </div>
-    }
-
-    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-        <thead>
-            <tr>
-                <th style="border-bottom: 1px solid #000; text-align: left; padding: 0.25rem;">Item / Description</th>
-                <th style="border-bottom: 1px solid #000; text-align: right; padding: 0.25rem;">Quantity</th>
-                <th style="border-bottom: 1px solid #000; text-align: right; padding: 0.25rem;">Unit Price</th>
-                <th style="border-bottom: 1px solid #000; text-align: right; padding: 0.25rem;">Subtotal</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var v in Report?.Vouchers ?? Enumerable.Empty<Vouchers>())
-            {
-                <tr>
-                    <td style="padding: 0.25rem;">@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</td>
-                    <td style="padding: 0.25rem; text-align: right;">@v.Quantity</td>
-                    <td style="padding: 0.25rem; text-align: right;">@v.SellPrice.ToString("C", mm.NumberFormatInfo)</td>
-                    <td style="padding: 0.25rem; text-align: right;">@((v.SellPrice * v.Quantity).ToString("C", mm.NumberFormatInfo))</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <div style="margin-top: 1rem; text-align: right; font-weight: bold; font-size: 1.25rem;">
-        Total Amount: @Report?.TotalAmount.ToString("C", mm.NumberFormatInfo)
-    </div>
-</div>
+ @if (Report != null)
+{
 <div id="print-voucher-template" class="print-only">
-    @if (Report != null)
-    {
+   
         <div class="voucher-container">
             <div class="voucher-header">
                 <div class="title-container">
@@ -296,19 +256,41 @@
                 </div>
             </div>
         </div>
-    }
+    
 </div>
+}
   
 @code {
 
     [Parameter]
     public Reports? Report { get; set; }
 
+    public Reports? ReportToPrint { get; set; }
+
     private Myanmar mm = new Myanmar();
 
     private async Task PrintAsync()
     {
-        await JSRuntime.InvokeVoidAsync("eval", "window.print()");
+        ReportToPrint = Report; // Set the report to print, which can trigger any print-specific rendering if needed
+        if (ReportToPrint == null) return;
+
+        try
+        {
+            // Ensure the print template has rendered
+            StateHasChanged();
+            await Task.Delay(300);
+
+            // Print only the voucher template for more reliable behavior
+            await JSRuntime.InvokeVoidAsync("print");
+
+            ReportToPrint = null; // Clear report after printing to reset modal state
+
+
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"Print failed: {ex.Message}");
+        }
     }
 
     private async Task ExportCsvAsync()

@@ -1087,14 +1087,18 @@ a.mobile-topbar-nav-item.active {
     /* Standard reset for print visibility */
     body * {
         visibility: hidden;
+    } 
+
+    .print-only {
+        display: block !important;
     }
 
     #print-voucher-template, #print-voucher-template * {
-        visibility: visible;
+        visibility: visible !important;
     }
 
     #print-voucher-template {
-        display: block;
+        display: block !important;
         position: absolute;
         left: 0;
         top: 0;

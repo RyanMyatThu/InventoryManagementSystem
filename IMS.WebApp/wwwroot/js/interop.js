@@ -129,25 +129,40 @@ window.unregisterResizeHandler = () => {
     }
 };
 
-window.printElementById = async (id, reportId) => {
-    const content = document.getElementById(id);
-    if (!content) return;
+window.printElement = function(elementId) {
+        var printContent = document.getElementById(elementId);
+        if (!printContent) return;
 
-    content.style.display = 'block';
+        // Create a hidden iframe
+        var iframe = document.createElement('iframe');
+        iframe.style.position = 'absolute';
+        iframe.style.width = '0px';
+        iframe.style.height = '0px';
+        iframe.style.border = 'none';
+        document.body.appendChild(iframe);
 
-    const win = window.open('', '', 'width=900,height=600');
+        var doc = iframe.contentWindow.document;
+        doc.open();
+        
+        // Start building the isolated HTML
+        doc.write('<html><head><title>Print Voucher</title>');
+        
+        // Copy all styles from the main page to the iframe so your voucher looks right
+        var styles = document.getElementsByTagName('style');
+        for (var i = 0; i < styles.length; i++) {
+            doc.write(styles[i].outerHTML);
+        }
+        var links = document.getElementsByTagName('link');
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].rel === 'stylesheet') {
+                doc.write(links[i].outerHTML);
+            }
+        }
+        
+        // Add a script that triggers print and then cleans up the iframe
+        doc.write('</head><body onload="window.focus(); window.print(); setTimeout(function(){ window.parent.document.body.removeChild(window.frameElement); }, 500); ">');
+        doc.write(printContent.innerHTML);
+        doc.write('</body></html>');
+        doc.close();
+    };
 
-    document.querySelectorAll('link[rel=stylesheet], style')
-        .forEach(s => win.document.write(s.outerHTML));
-
-    win.document.write(`<html><head><title>Report #${reportId}</title></head><body>`);
-    win.document.write(content.outerHTML);
-    win.document.write('</body></html>');
-
-    win.document.close();
-    win.focus();
-    win.print();
-    win.close();
-
-    content.style.display = 'none';
-};
