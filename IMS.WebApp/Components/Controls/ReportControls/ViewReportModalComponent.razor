@@ -1,5 +1,4 @@
-﻿
-@using IMS.WebApp.Models
+﻿@using IMS.WebApp.Models
 @using IMS.CoreBusiness
 @using System.Globalization
 @using IMS.WebApp.Culture
@@ -163,9 +162,9 @@
         </div>
     </div>
 </div>
- @if (Report != null)
+ @if (ReportToPrint != null)
 {
-<div id="print-voucher-template" class="print-only">
+    <div @key="ReportToPrint.ReportId" id="print-voucher-template" class="print-only">
    
         <div class="voucher-container">
             <div class="voucher-header">
@@ -192,15 +191,15 @@
             <div class="customer-info-section">
                 <div class="info-row">
                     <span class="label-red">Name:</span>
-                    <span class="dotted-line">@Report.Customer?.CustomerName</span>
+                    <span class="dotted-line">@ReportToPrint.Customer?.CustomerName</span>
                     <span class="label-red">Date:</span>
-                    <span class="dotted-line">@Report.ReportDate.ToString("dd/MM/yyyy")</span>
+                    <span class="dotted-line">@ReportToPrint.ReportDate.ToString("dd/MM/yyyy")</span>
                 </div>
                 <div class="info-row">
                     <span class="label-red">Address:</span>
-                    <span class="dotted-line">@Report.Customer?.Address</span>
+                    <span class="dotted-line">@ReportToPrint.Customer?.Address</span>
                     <span class="label-red">Phone:</span>
-                    <span class="dotted-line">@Report.Customer?.Phone</span>
+                    <span class="dotted-line">@ReportToPrint.Customer?.Phone</span>
                 </div>
             </div>
 
@@ -216,25 +215,25 @@
                 <tbody>
                     <tr>
                         <td>
-                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            @foreach (var v in ReportToPrint.Vouchers ?? Enumerable.Empty<Vouchers>())
                             {
                                 <div>@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</div>
                             }
                         </td>
                         <td style="text-align:center">
-                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            @foreach (var v in ReportToPrint.Vouchers ?? Enumerable.Empty<Vouchers>())
                             {
                                 <div>@v.Quantity</div>
                             }
                         </td>
                         <td style="text-align:right">
-                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            @foreach (var v in ReportToPrint.Vouchers ?? Enumerable.Empty<Vouchers>())
                             {
                                 <div>@v.SellPrice.ToString("N0")</div>
                             }
                         </td>
                         <td style="text-align:right">
-                            @foreach (var v in Report.Vouchers ?? Enumerable.Empty<Vouchers>())
+                            @foreach (var v in ReportToPrint.Vouchers ?? Enumerable.Empty<Vouchers>())
                             {
                                 <div>@((v.SellPrice * v.Quantity).ToString("N0"))</div>
                             }
@@ -247,11 +246,7 @@
                 <div class="summary-box">
                     <div class="summary-line">
                         <span>Total Amount</span>
-                        <span>@Report.TotalAmount.ToString("N0")</span>
-                    </div>
-                    <div class="summary-line">
-                        <span>Balance</span>
-                        <span>@Report.TotalAmount.ToString("N0")</span>
+                        <span>@ReportToPrint.TotalAmount.ToString("N0")</span>
                     </div>
                 </div>
             </div>
@@ -268,31 +263,24 @@
     public Reports? ReportToPrint { get; set; }
 
     private Myanmar mm = new Myanmar();
-
     private async Task PrintAsync()
     {
-        ReportToPrint = Report; // Set the report to print, which can trigger any print-specific rendering if needed
-        if (ReportToPrint == null) return;
+        if (Report == null) return;
 
-        try
-        {
-            // Ensure the print template has rendered
-            StateHasChanged();
-            await Task.Delay(300);
+        // Step 1: clear first (forces DOM removal)
+        ReportToPrint = null;
+        await InvokeAsync(StateHasChanged);
 
-            // Print only the voucher template for more reliable behavior
-            await JSRuntime.InvokeVoidAsync("print");
+        // Step 2: set again (forces fresh DOM)
+        ReportToPrint = Report;
+        await InvokeAsync(StateHasChanged);
 
-            ReportToPrint = null; // Clear report after printing to reset modal state
+        // Step 3: wait for render
+        await Task.Delay(300);
 
-
-        }
-        catch (Exception ex)
-        {
-            await JSRuntime.InvokeVoidAsync("alert", $"Print failed: {ex.Message}");
-        }
+        // Step 4: print fresh DOM
+        await JSRuntime.InvokeVoidAsync("printSection", "print-voucher-template");
     }
-
     private async Task ExportCsvAsync()
     {
         if (Report is null) return;

@@ -52,6 +52,7 @@ namespace IMS.Plugins.EFCore
             var existingReport = await _db.Reports.FirstOrDefaultAsync(r => r.ReportId == report.ReportId) ?? throw new Exception("Report not found");
             existingReport.TotalAmount = report.TotalAmount;
             existingReport.Profit = report.Profit;
+            existingReport.ReportDate = report.ReportDate;
             return await _db.SaveChangesAsync();
            
         }

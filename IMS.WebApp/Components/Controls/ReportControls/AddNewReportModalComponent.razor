@@ -192,6 +192,7 @@
             await JSRuntime.InvokeVoidAsync("alert", "Total amount cannot be zero. Please add items to the invoice.");
             return;
         }
+        report.ReportDate = invoiceDate;
         report.TotalAmount = TotalAmount;
         report.Profit = TotalAmount - TotalCosts;
         int res1 = await updateVoucherUseCase.ExecuteAsync();
