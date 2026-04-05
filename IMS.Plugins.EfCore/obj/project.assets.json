@@ -617,35 +617,42 @@
     ]
   },
   "packageFolders": {
-    "/Users/ryanmyatthu/.nuget/packages/": {}
+    "C:\\Users\\ryanw\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.Plugins.EfCore/IMS.Plugins.EFCore.csproj",
+      "projectUniqueName": "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj",
       "projectName": "IMS.Plugins.EFCore",
-      "projectPath": "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.Plugins.EfCore/IMS.Plugins.EFCore.csproj",
-      "packagesPath": "/Users/ryanmyatthu/.nuget/packages/",
-      "outputPath": "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.Plugins.EfCore/obj/",
+      "projectPath": "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj",
+      "packagesPath": "C:\\Users\\ryanw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.Plugins.EfCore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ryanmyatthu/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ryanw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.Core/IMS.CoreBusiness.csproj": {
-              "projectPath": "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.Core/IMS.CoreBusiness.csproj"
+            "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.Core\\IMS.CoreBusiness.csproj": {
+              "projectPath": "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.Core\\IMS.CoreBusiness.csproj"
             },
-            "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.UseCases/IMS.UseCases.csproj": {
-              "projectPath": "/Users/ryanmyatthu/Documents/GitHub/InventoryManagementSystem/IMS.UseCases/IMS.UseCases.csproj"
+            "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.UseCases\\IMS.UseCases.csproj": {
+              "projectPath": "C:\\Users\\ryanw\\Desktop\\IMS\\InventoryManagementSystem\\IMS.UseCases\\IMS.UseCases.csproj"
             }
           }
         }
@@ -687,7 +694,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

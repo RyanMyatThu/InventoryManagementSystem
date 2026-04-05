@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ACED7F33-81BF-4D22-B77F-848565230F27}|Solution Items{ACED7F33-81BF-4D22-B77F-848565230F27}|C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{ACED7F33-81BF-4D22-B77F-848565230F27}|Solution Items{ACED7F33-81BF-4D22-B77F-848565230F27}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACED7F33-81BF-4D22-B77F-848565230F27}|Solution Items{ACED7F33-81BF-4D22-B77F-848565230F27}|C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{ACED7F33-81BF-4D22-B77F-848565230F27}|Solution Items{ACED7F33-81BF-4D22-B77F-848565230F27}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\pages\\reportspage\\reportslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\reportspage\\reportslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACED7F33-81BF-4D22-B77F-848565230F27}|Solution Items{ACED7F33-81BF-4D22-B77F-848565230F27}|C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{ACED7F33-81BF-4D22-B77F-848565230F27}|Solution Items{ACED7F33-81BF-4D22-B77F-848565230F27}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2F5B833-9DEB-4E89-AAD4-788D7728B406}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\ryanm\\documents\\github\\inventorymanagementsystem\\ims.webapp\\components\\controls\\reportcontrols\\reportcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -350,11 +354,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ReportsList.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\ReportsPage\\ReportsList.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\ReportsPage\\ReportsList.razor",
@@ -366,24 +370,25 @@
               "IsPinned": true
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-22T10:24:27.852Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewReportModalComponent.razor",
-              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
-              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
-              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
-              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
-              "ViewState": "AgIAABABAAAAAAAAAADwvyIBAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-12T14:14:33.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Program.cs",
               "RelativeDocumentMoniker": "IMS.WebApp\\Program.cs",
@@ -395,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Reports.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Reports.cs",
               "RelativeDocumentMoniker": "IMS.Core\\Reports.cs",
@@ -407,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ReportCard.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\ReportCard.razor",
@@ -419,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IMS.WebApp.csproj",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\IMS.WebApp.csproj",
               "RelativeDocumentMoniker": "IMS.WebApp\\IMS.WebApp.csproj",
@@ -431,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\app.css",
@@ -444,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "interop.js",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\wwwroot\\js\\interop.js",
               "RelativeDocumentMoniker": "IMS.WebApp\\wwwroot\\js\\interop.js",
@@ -456,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "InventoryListItemComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListItemComponent.razor",
@@ -468,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -476,11 +481,24 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-02-19T14:52:16.752Z"
+              "WhenOpened": "2026-02-19T14:52:16.752Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "ViewReportModalComponent.razor",
+              "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
+              "ToolTip": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\ReportControls\\ViewReportModalComponent.razor",
+              "ViewState": "AgIAABABAAAAAAAAAADwvyIBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T14:14:33.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "IInventoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IInventoryRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IInventoryRepository.cs",
@@ -492,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerRepository.cs",
@@ -504,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\appsettings.json",
               "RelativeDocumentMoniker": "IMS.WebApp\\appsettings.json",
@@ -516,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IMS.Plugins.EFCore.csproj",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\IMS.Plugins.EFCore.csproj",
@@ -528,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Myanmar.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Culture\\Myanmar.cs",
               "RelativeDocumentMoniker": "IMS.WebApp\\Culture\\Myanmar.cs",
@@ -540,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AddNewReportModalComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\AddNewReportModalComponent.razor",
@@ -552,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ReportViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Models\\ReportViewModel.cs",
               "RelativeDocumentMoniker": "IMS.WebApp\\Models\\ReportViewModel.cs",
@@ -564,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AddCustomerModalComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\AddCustomerModalComponent.razor",
@@ -576,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "CalandarComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\CalandarComponent.razor",
@@ -588,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "SideBarMenu.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\SideBarMenu.razor",
@@ -600,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CustomerList.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
@@ -612,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "InventoryList.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
@@ -624,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CustomerFilters.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\ReportControls\\CustomerFilters.razor",
@@ -636,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\MainLayout.razor",
@@ -648,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "EditCustomerModalComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\CustomersControls\\EditCustomerModalComponent.razor",
@@ -660,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "AddInventoryModalComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\AddInventoryModalComponent.razor",
@@ -672,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "EditInventoryModalComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\EditInventoryModalComponent.razor",
@@ -684,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UpdateReportsUsecase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\UpdateReportsUsecase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\UpdateReportsUsecase.cs",
@@ -696,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "GetReportByIDUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetReportByIDUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetReportByIDUseCase.cs",
@@ -708,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "IGetReportByIDUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetReportByIDUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetReportByIDUseCase.cs",
@@ -720,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "GetReportByCustomerIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetReportByCustomerIdUseCase.cs",
@@ -732,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ICreateReportUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\ICreateReportUseCase.cs",
@@ -744,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "GetAllReportsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\GetAllReportsUseCase.cs",
@@ -756,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "EFReportsRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFReportsRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFReportsRepository.cs",
@@ -768,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "InventoryListComponent.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
@@ -780,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Home.razor",
@@ -792,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\_Imports.razor",
@@ -804,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "EFCustomerRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerRepository.cs",
@@ -816,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Customer.cs",
               "RelativeDocumentMoniker": "IMS.Core\\Customer.cs",
@@ -828,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "CustomerPrice.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\CustomerPrice.cs",
               "RelativeDocumentMoniker": "IMS.Core\\CustomerPrice.cs",
@@ -840,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Inventory.cs",
               "RelativeDocumentMoniker": "IMS.Core\\Inventory.cs",
@@ -852,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "IMSDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\IMSDbContext.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\IMSDbContext.cs",
@@ -864,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "IUpdateReportsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IUpdateReportsUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IUpdateReportsUseCase.cs",
@@ -876,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "EFVouchersRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFVouchersRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFVouchersRepository.cs",
@@ -888,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Vouchers.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Core\\Vouchers.cs",
               "RelativeDocumentMoniker": "IMS.Core\\Vouchers.cs",
@@ -900,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\App.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\App.razor",
@@ -912,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Error.razor",
@@ -924,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "BrowserService.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Services\\BrowserService.cs",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Services\\BrowserService.cs",
@@ -936,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "IReportsRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IReportsRepository.cs",
@@ -948,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "IGetReportByCustomerIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetReportByCustomerIdUseCase.cs",
@@ -960,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "IVouchersRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\IVouchersRepository.cs",
@@ -972,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "CreateReportUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\CreateReportUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\CreateReportUseCase.cs",
@@ -984,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "AddVoucherUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\AddVoucherUseCase.cs",
@@ -996,7 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "IAddVoucherUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\Interfaces\\IAddVoucherUseCase.cs",
@@ -1008,7 +1026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "IUpdateVoucherUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\Interfaces\\IUpdateVoucherUseCase.cs",
@@ -1020,7 +1038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "UpdateVoucherUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Voucher\\UpdateVoucherUseCase.cs",
@@ -1032,7 +1050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "EFCustomerPriceRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFCustomerPriceRepository.cs",
@@ -1044,7 +1062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "EFInventoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.Plugins.EfCore\\EFInventoryRepository.cs",
               "RelativeDocumentMoniker": "IMS.Plugins.EfCore\\EFInventoryRepository.cs",
@@ -1056,7 +1074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "IGetAllReportsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Report\\Interfaces\\IGetAllReportsUseCase.cs",
@@ -1068,7 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "GetCustomerAndInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\GetCustomerAndInventoryUseCase.cs",
@@ -1080,7 +1098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "GetCustomerPriceItemsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\GetCustomerPriceItemsUseCase.cs",
@@ -1092,7 +1110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "AddCustomerPriceItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceItemUseCase.cs",
@@ -1104,7 +1122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "DeleteInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\DeleteInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\DeleteInventoryUseCase.cs",
@@ -1116,7 +1134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "AddInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\AddInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\AddInventoryUseCase.cs",
@@ -1128,7 +1146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "IGetInventoryByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\Interfaces\\IGetInventoryByIdUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\Interfaces\\IGetInventoryByIdUseCase.cs",
@@ -1140,7 +1158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "IAddInventoryUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Inventories\\Interfaces\\IAddInventoryUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Inventories\\Interfaces\\IAddInventoryUseCase.cs",
@@ -1152,7 +1170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "ViewCustomersByNameUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\ViewCustomersByNameUseCase.cs",
@@ -1164,7 +1182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "ICustomerPriceRepository.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\PluginInterfaces\\ICustomerPriceRepository.cs",
@@ -1176,7 +1194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "RemoveCustomerUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\RemoveCustomerUseCase.cs",
@@ -1188,7 +1206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "GetCustomerByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\GetCustomerByIdUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\GetCustomerByIdUseCase.cs",
@@ -1200,7 +1218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "CheckForInventoryItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\CheckForInventoryItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\CheckForInventoryItemUseCase.cs",
@@ -1212,7 +1230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "RemoveCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPriceUseCase.cs",
@@ -1224,7 +1242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "ICheckForInventoryItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\ICheckForInventoryItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\ICheckForInventoryItemUseCase.cs",
@@ -1236,7 +1254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Routes.razor",
@@ -1248,7 +1266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "EditCustomerUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\EditCustomerUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\EditCustomerUseCase.cs",
@@ -1260,7 +1278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "IEditCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IEditCustomerPriceUseCase.cs",
@@ -1272,7 +1290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "IAddCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceUseCase.cs",
@@ -1284,7 +1302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "AddCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\AddCustomerPriceUseCase.cs",
@@ -1296,7 +1314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "IAddCustomerPriceItemUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IAddCustomerPriceItemUseCase.cs",
@@ -1308,7 +1326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.WebApp\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Layout\\MainLayout.razor.css",
@@ -1320,7 +1338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "IRemoveCustomerUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\Customers\\Interfaces\\IRemoveCustomerUseCase.cs",
@@ -1332,7 +1350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "RemoveCustomerPricesUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\RemoveCustomerPricesUseCase.cs",
@@ -1344,7 +1362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "IRemoveCustomerPricesUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPricesUseCase.cs",
@@ -1356,7 +1374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "IGetCustomerPriceItemsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IGetCustomerPriceItemsUseCase.cs",
@@ -1368,7 +1386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "IRemoveCustomerPriceUseCase.cs",
               "DocumentMoniker": "C:\\Users\\ryanm\\Documents\\GitHub\\InventoryManagementSystem\\IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",
               "RelativeDocumentMoniker": "IMS.UseCases\\CustomerPrices\\Interfaces\\IRemoveCustomerPriceUseCase.cs",

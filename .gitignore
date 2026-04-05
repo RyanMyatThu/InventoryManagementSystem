@@ -1,2 +1,71 @@
-*.tmp
+
 mssql-data/*
+# Visual Studio / IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
+*.code-workspace
+
+# Build outputs
+bin/
+obj/
+artifacts/
+out/
+publish/
+
+# NuGet/Packages
+*.nupkg
+packages/
+.nuget/packages/
+project.lock.json
+project.fragment.lock.json
+
+# Frontend / Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Blazor / ASP.NET generated files (safe to ignore build-time artifacts)
+wwwroot/_framework/
+wwwroot/_bin/
+wwwroot/_content/
+*.map
+
+# Databases / runtime files
+*.db
+*.db-journal
+*.sqlite
+*.mdf
+*.ldf
+*.log
+logs/
+
+# User secrets / local settings
+secrets.json
+appsettings.Development.json
+
+# Test results / coverage
+TestResults/
+coverage/
+coverage*.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary / backup files
+*.tmp
+*.temp
+*.bak
+*~
+*.swp
+
+# Editor / tooling
+*.sln.iml
+.vs/Packages/
