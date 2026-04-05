@@ -1,4 +1,0 @@
-wwwroot\Pictures\logo.jpg
-wwwroot\app.css
-wwwroot\favicon.png
-wwwroot\js\interop.js
