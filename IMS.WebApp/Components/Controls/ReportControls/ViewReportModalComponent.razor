@@ -217,7 +217,7 @@
                         <td>
                             @foreach (var v in ReportToPrint.Vouchers ?? Enumerable.Empty<Vouchers>())
                             {
-                                <div>@(v.Inventory?.InventoryName ?? $"Inventory #{v.InventoryId}")</div>
+                                <div>@(v.Inventory?.DisplayName ?? $"Inventory #{v.InventoryId}")</div>
                             }
                         </td>
                         <td style="text-align:center">

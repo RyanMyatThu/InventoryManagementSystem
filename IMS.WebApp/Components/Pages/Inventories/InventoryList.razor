@@ -41,6 +41,7 @@ else
 <AddInventoryModalComponent OnProductAdded="LoadList" OpenToast="AddProduct" OpenErrorToast="ErrorToast"></AddInventoryModalComponent>
 
     <EditInventoryModalComponent InventoryName="@(!string.IsNullOrEmpty(product?.InventoryName) ? product.InventoryName.Trim() : "")"
+                                 displayName="@(!string.IsNullOrEmpty(product?.DisplayName) ? product.DisplayName.Trim() : "")"
                                  Price="@(product?.Price != null ? product.Price : 0)"
                                  Id="@(product?.InventoryId != null ? product.InventoryId : 0)"
                                  OnSave="LoadList"

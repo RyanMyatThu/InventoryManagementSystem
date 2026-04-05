@@ -12,6 +12,10 @@ namespace IMS.CoreBusiness
         public int InventoryId { get; set; }
         [Required]
         public string InventoryName { get; set; } = string.Empty;
+
+        [Required]
+        public string DisplayName { get; set; } = string.Empty;
+
         [Required]
         public decimal Price { get; set; }
 

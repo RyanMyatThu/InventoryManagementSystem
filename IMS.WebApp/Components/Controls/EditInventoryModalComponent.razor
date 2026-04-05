@@ -14,6 +14,11 @@
                     <input type="text" class="form-control" id="editInventoryNameInput"
                            @bind="inventoryName" placeholder="Enter inventory name" />
                 </div>
+                <div class="mb-3">
+                    <label for="editDisplayNameInput" class="form-label">Display Name</label>
+                    <input type="text" class="form-control" id="editDisplayNameInput"
+                           @bind="displayName" placeholder="Enter display name" />
+                </div>
 
                 <div class="mb-3">
                     <label for="editPriceInput" class="form-label">Price</label>
@@ -33,8 +38,11 @@
 @code {
     [Inject] IUpdateInventoryUseCase UpdateInventoryUseCase { get; set; } = default!;
 
+    
     [Parameter]
     public string? inventoryName { get; set; }
+    [Parameter]
+    public string? displayName { get; set; }
     [Parameter]
     public decimal price { get; set; }
     [Parameter]
@@ -52,6 +60,7 @@
         {
             InventoryId = id,
             InventoryName = inventoryName ?? string.Empty,
+            DisplayName = displayName ?? string.Empty,
             Price = price
         };
         Console.Write(updatedInventory);
