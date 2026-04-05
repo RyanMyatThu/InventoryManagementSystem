@@ -21,5 +21,10 @@ namespace IMS.UseCases.Report
         {
             return await reportsRepository.GetAllReports();
         }
+
+        public async Task<IEnumerable<Reports>> ExecuteAsync(DateTime start, DateTime end)
+        {
+            return await reportsRepository.GetReportsByDateRange(start, end);
+        }
     }
 }

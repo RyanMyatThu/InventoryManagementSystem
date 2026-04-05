@@ -67,6 +67,7 @@ builder.Services.AddTransient<ICreateReportUseCase, CreateReportUseCase>();
 builder.Services.AddTransient<IUpdateVoucherUseCase, UpdateVoucherUseCase>();
 builder.Services.AddTransient<IUpdateReportsUseCase, UpdateReportsUsecase>();
 builder.Services.AddTransient<IGetReportByIDUseCase, GetReportByIDUseCase>();
+builder.Services.AddTransient<IRemoveReportUseCase, RemoveReportUseCase>();
 
 var app = builder.Build();
 

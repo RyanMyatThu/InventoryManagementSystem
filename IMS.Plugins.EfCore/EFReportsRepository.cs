@@ -28,24 +28,47 @@ namespace IMS.Plugins.EFCore
 
         public async Task<IEnumerable<Reports>> GetAllReports()
         {
-            return await _db.Reports.Include(r => r.Customer).ToListAsync();
+            return await _db.Reports
+                .Include(r => r.Customer)
+                .Include(r => r.Vouchers)
+                    .ThenInclude(v => v.Inventory)
+                .ToListAsync();
         }
 
         public async Task<Reports?> GetReportById(int reportId)
         {
-            if(reportId <= 0)
+            if (reportId <= 0)
             {
                 throw new ArgumentException("Invalid report ID");
             }
-            var report = await _db.Reports.Include(r => r.Vouchers).FirstOrDefaultAsync(r => r.ReportId == reportId);
+            var report = await _db.Reports
+                .Include(r => r.Customer)
+                .Include(r => r.Vouchers)
+                    .ThenInclude(v => v.Inventory)
+                .FirstOrDefaultAsync(r => r.ReportId == reportId);
             if (report is null) return null;
             return report;
-            
+
+        }
+
+        public async Task<IEnumerable<Reports>> GetReportsByDateRange(DateTime start, DateTime end)
+        {
+            if (start > end) throw new ArgumentException("Start date must be earlier than end date");
+
+            // Normalize end to include the whole day
+            var endOfDay = end.Date.AddDays(1).AddTicks(-1);
+
+            return await _db.Reports
+                .Where(r => r.ReportDate >= start.Date && r.ReportDate <= endOfDay)
+                .Include(r => r.Customer)
+                .Include(r => r.Vouchers)
+                    .ThenInclude(v => v.Inventory)
+                .ToListAsync();
         }
 
         public async Task<int> UpdateTotal(Reports report)
         {
-            if(report is null)
+            if (report is null)
             {
                 throw new ArgumentNullException("Invalid report ID");
             }
@@ -54,7 +77,23 @@ namespace IMS.Plugins.EFCore
             existingReport.Profit = report.Profit;
             existingReport.ReportDate = report.ReportDate;
             return await _db.SaveChangesAsync();
-           
+
+        }
+
+        public async Task<int> RemoveReport(int reportId)
+        {
+            if (reportId <= 0)
+            {
+                throw new ArgumentException("Invalid report ID");
+            }
+            var report = await _db.Reports.FirstOrDefaultAsync(r => r.ReportId == reportId);
+            if(report is null)
+            {
+                throw new Exception("Report not found");
+            }
+            _db.Reports.Remove(report);
+            return await _db.SaveChangesAsync();
+
         }
     }
 }

@@ -9,5 +9,6 @@ namespace IMS.UseCases.Report.Interfaces
     public interface IGetAllReportsUseCase 
     {
         Task<IEnumerable<Reports>> ExecuteAsync();
+        Task<IEnumerable<Reports>> ExecuteAsync(DateTime start, DateTime end);
     }
 }

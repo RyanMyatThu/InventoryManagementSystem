@@ -22,8 +22,15 @@
                     <div class="card-header bg-white">
                         <h6 class="mb-0 fw-semibold">Date Filter</h6>
                     </div>
-                    <div class="card-body">
-                        <CalandarComponent />
+                <div class="card-body">
+                        <div class="mt-3 d-flex gap-2">
+                            <input type="date" class="form-control" @bind="startDate" />
+                            <input type="date" class="form-control" @bind="endDate" />
+                        </div>
+                        <div class="mt-4">
+                        <button class="btn btn-primary" @onclick="ApplyDateFilter">Apply</button>
+                        <button class="btn btn-outline-secondary" @onclick="ClearDateFilter">Clear</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,7 +44,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
         @if (FilteredReports != null && FilteredReports.Any())
         {
@@ -66,10 +73,9 @@
     </div>
 
     <AddNewReportModalComponent OnReportAdded="LoadList" OpenToast="SaveInvoice" OpenErrorToast="ErrorToast" customerList="customers"></AddNewReportModalComponent>
-    if (selectedReport != null)
-    {
+   
         <ViewReportModalComponent Report="@selectedReport" ></ViewReportModalComponent>
-    }
+    
     <div class="toast-container position-fixed top-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
@@ -92,6 +98,8 @@
     private List<Customer>? customers;
     private List<Reports>? reports;
     private Reports? selectedReport;
+    private DateTime? startDate;
+    private DateTime? endDate;
 
     protected override async Task OnInitializedAsync()
     {
@@ -102,9 +110,10 @@
 
 
     private List<Reports>? FilteredReports => 
-        SelectedCustomer == 0 
-        ? reports 
-        : reports.Where(r => r.CustomerId == SelectedCustomer).ToList();
+        (reports == null) ? null :
+        (startDate.HasValue && endDate.HasValue)
+            ? (SelectedCustomer == 0 ? reports.Where(r => r.ReportDate.Date >= startDate.Value.Date && r.ReportDate.Date <= endDate.Value.Date) : reports.Where(r => r.CustomerId == SelectedCustomer && r.ReportDate.Date >= startDate.Value.Date && r.ReportDate.Date <= endDate.Value.Date)).ToList()
+            : (SelectedCustomer == 0 ? reports : reports.Where(r => r.CustomerId == SelectedCustomer).ToList());
 
     private void OnCustomerSelected(int id)
     {
@@ -116,6 +125,28 @@
         reports = (await GetAllReportsUseCase.ExecuteAsync()).ToList();
         StateHasChanged();
 
+    }
+
+    private async Task ApplyDateFilter()
+    {
+        if (startDate.HasValue && endDate.HasValue)
+        {
+            // fetch from backend to ensure vouchers and inventory included
+            reports = (await GetAllReportsUseCase.ExecuteAsync(startDate.Value, endDate.Value)).ToList();
+        }
+        else
+        {
+            reports = (await GetAllReportsUseCase.ExecuteAsync()).ToList();
+        }
+        StateHasChanged();
+    }
+
+    private async Task ClearDateFilter()
+    {
+        startDate = null;
+        endDate = null;
+        reports = (await GetAllReportsUseCase.ExecuteAsync()).ToList();
+        StateHasChanged();
     }
 
 

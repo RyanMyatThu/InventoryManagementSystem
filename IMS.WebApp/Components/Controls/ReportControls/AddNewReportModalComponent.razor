@@ -96,7 +96,7 @@
 
 
             <div class="modal-footer">
-                <button id="close-add-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="close-add-modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="HandleCloseModalAsync">Close</button>
                 <button type="button" class="btn btn-primary" @onclick="HandleSaveInvoiceAsync">Save Invoice</button>
             </div>
 
@@ -113,6 +113,7 @@
     [Inject] public IAddVoucherUseCase addVoucherUseCase { get; set; } = default!;
     [Inject] public IUpdateVoucherUseCase updateVoucherUseCase { get; set; } = default!;
     [Inject] public IUpdateReportsUseCase updateReportsUseCase { get; set; } = default!;
+    [Inject] public IRemoveReportUseCase removeReportUseCase { get; set; } = default!;
 
 
     [Parameter]
@@ -130,7 +131,7 @@
     private ICollection<CustomerPrice>? customerPrice;
     private ICollection<Vouchers> voucherList = new List<Vouchers>();
     private Dictionary<int, decimal> itemSellPriceMap = new();
-    private int reportId;
+    private int reportId = 0;
     private bool isDisabled = false;
     private decimal TotalAmount =>
     voucherList.Sum(item => item.SellPrice * item.Quantity);
@@ -209,5 +210,16 @@
         {
             await OpenErrorToast.InvokeAsync();
         }
+    }
+
+    private async Task HandleCloseModalAsync()
+    {
+        if(reportId != 0)
+        {
+            await removeReportUseCase.ExecuteAsync(reportId);
+        }
+         selectedCustomerId = 0;
+         isDisabled = false;
+         voucherList.Clear();
     }
 }
