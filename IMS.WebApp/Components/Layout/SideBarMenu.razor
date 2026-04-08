@@ -30,6 +30,10 @@
                     <i class="bi-graph-up"></i>
                     <span>Reports</span>
                 </NavLink>
+                <NavLink href="custom-reports" class="mobile-topbar-nav-item">
+                    <i class="bi-graph-up"></i>
+                    <span>Custom Reports</span>
+                </NavLink>
             </nav>
         </div>
     </div>
@@ -126,6 +130,22 @@
                 @if (IsCollapsed && ShowTooltipFor == "Reports")
                 {
                     <div class="sidebar-tooltip" style="opacity: 1;">Reports</div>
+                }
+            </li>
+            <li class="nav-item mb-2 position-relative">
+                <NavLink class="nav-link sidebar-link"
+                         href="custom-reports"
+                         @onmouseenter="@(() => ShowTooltipFor = IsCollapsed ? "Custom Reports" : "")"
+                         @onmouseleave="@(() => ShowTooltipFor = "")">
+                    <i class="bi-graph-up"></i>
+                    @if (!IsCollapsed)
+                    {
+                        <span class="ms-2" style="transition: opacity var(--transition-base);">Custom Reports</span>
+                    }
+                </NavLink>
+                @if (IsCollapsed && ShowTooltipFor == "Custom Reports")
+                {
+                    <div class="sidebar-tooltip" style="opacity: 1;">Custom Reports</div>
                 }
             </li>
         </ul>

@@ -1,0 +1,301 @@
+﻿@page "/custom-reports"
+@rendermode InteractiveServer
+
+@using IMS.CoreBusiness
+@using IMS.WebApp.Culture
+@inject IViewCustomersByNameUseCase ViewCustomersByNameUseCase
+@inject IGetAllReportsUseCase GetAllReportsUseCase
+
+<div class="page-container">
+    <div class="page-header mb-4 d-flex align-items-center justify-content-between">
+        <div>
+            <h3 class="mb-0">Custom Reports Dashboard</h3>
+            <div class="text-muted small">Generate aggregated reports for a selected customer and period</div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label small mb-1">Customer</label>
+                        <select class="form-select form-select-sm" @bind="selectedCustomerId">
+                            <option value="0">All customers</option>
+                            @foreach (var c in customers ?? Enumerable.Empty<Customer>())
+                            {
+                                <option value="@c.CustomerId">@c.CustomerName</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small mb-1">Period Type</label>
+                        <select class="form-select form-select-sm" @bind="periodType">
+                            <option value="Monthly">Monthly</option>
+                            <option value="Custom">Custom Range</option>
+                        </select>
+                    </div>
+
+                    @if (periodType == "Monthly")
+                    {
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label class="form-label small mb-1">Month</label>
+                                <select class="form-select form-select-sm" @bind="monthPickerMonth">
+                                    @for (int m = 1; m <= 12; m++)
+                                    {
+                                        <option value="@m">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(m)</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label class="form-label small mb-1">Year</label>
+                                <select class="form-select form-select-sm" @bind="monthPickerYear">
+                                    @for (int y = DateTime.Today.Year - 5; y <= DateTime.Today.Year + 1; y++)
+                                    {
+                                        <option value="@y">@y</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="mb-3">
+                            <label class="form-label small mb-1">Start Date</label>
+                            <input type="date" class="form-control form-control-sm" @bind="startDate" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small mb-1">End Date</label>
+                            <input type="date" class="form-control form-control-sm" @bind="endDate" />
+                        </div>
+                    }
+
+                    <div class="d-flex gap-2 mt-2">
+                        <button class="btn btn-primary btn-sm" @onclick="GenerateReport">Generate</button>
+                        <button class="btn btn-outline-secondary btn-sm" @onclick="ClearFilters">Clear</button>
+                        <button class="btn btn-outline-success btn-sm ms-auto" @onclick="ExportCsv" disabled="@(groups == null || !groups.Any())">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    @if (groups == null)
+                    {
+                        <div class="text-center text-muted py-5">No data generated. Choose filters and click <strong>Generate</strong>.</div>
+                    }
+                    else
+                    {
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <div class="p-3 border rounded bg-light">
+                                    <div class="small text-muted">Total Revenue</div>
+                                    <div class="h5 mb-0">@((totalRevenue).ToString("C", mm.NumberFormatInfo))</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-3 border rounded bg-light">
+                                    <div class="small text-muted">Total Cost</div>
+                                    <div class="h5 mb-0">@((totalCost).ToString("C", mm.NumberFormatInfo))</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-3 border rounded bg-light">
+                                    <div class="small text-muted">Profit</div>
+                                    <div class="h5 mb-0">@((totalProfit).ToString("C", mm.NumberFormatInfo))</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @foreach (var g in groups)
+                        {
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <div class="fw-semibold">@g.Label</div>
+                                    <div class="text-muted small">Revenue: @((g.Revenue).ToString("C", mm.NumberFormatInfo)) &nbsp; • &nbsp; Profit: @((g.Profit).ToString("C", mm.NumberFormatInfo))</div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Item</th>
+                                                <th class="text-end">Quantity</th>
+                                                <th class="text-end">Unit Cost</th>
+                                                <th class="text-end">Revenue</th>
+                                                <th class="text-end">Cost</th>
+                                                <th class="text-end">Profit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in g.Items)
+                                            {
+                                                <tr>
+                                                    <td>@item.Name</td>
+                                                    <td class="text-end">@item.Quantity</td>
+                                                    <td class="text-end">@((item.UnitCost).ToString("C", mm.NumberFormatInfo))</td>
+                                                    <td class="text-end">@((item.Revenue).ToString("C", mm.NumberFormatInfo))</td>
+                                                    <td class="text-end">@((item.Cost).ToString("C", mm.NumberFormatInfo))</td>
+                                                    <td class="text-end">@((item.Revenue - item.Cost).ToString("C", mm.NumberFormatInfo))</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Customer>? customers;
+    private int selectedCustomerId = 0;
+    private string periodType = "Monthly";
+    private DateTime? startDate;
+    private DateTime? endDate;
+    private int monthPickerMonth = DateTime.Today.Month;
+    private int monthPickerYear = DateTime.Today.Year;
+    private Myanmar mm = new Myanmar();
+
+    private List<MonthlyGroup>? groups;
+    private decimal totalRevenue = 0m;
+    private decimal totalCost = 0m;
+    private decimal totalProfit = 0m;
+
+    protected override async Task OnInitializedAsync()
+    {
+        customers = (await ViewCustomersByNameUseCase.ExecuteAsync()).ToList();
+    }
+
+    private async Task GenerateReport()
+    {
+        DateTime start;
+        DateTime end;
+
+        if (periodType == "Monthly")
+        {
+            start = new DateTime(monthPickerYear, monthPickerMonth, 1);
+            end = start.AddMonths(1).AddTicks(-1);
+        }
+        else
+        {
+            if (!startDate.HasValue || !endDate.HasValue) return;
+            start = startDate.Value.Date;
+            end = endDate.Value.Date.AddDays(1).AddTicks(-1);
+        }
+
+        var reports = (await GetAllReportsUseCase.ExecuteAsync(start, end)).ToList();
+        if (selectedCustomerId != 0)
+            reports = reports.Where(r => r.CustomerId == selectedCustomerId).ToList();
+
+        // flatten vouchers and group
+        var voucherRows = reports.SelectMany(r => r.Vouchers ?? Enumerable.Empty<Vouchers>(), (r, v) => new { r.ReportDate, Voucher = v }).ToList();
+
+        totalRevenue = voucherRows.Sum(x => x.Voucher.SellPrice * x.Voucher.Quantity);
+        totalCost = voucherRows.Sum(x => (x.Voucher.Inventory?.Price ?? 0m) * x.Voucher.Quantity);
+        totalProfit = totalRevenue - totalCost;
+
+        groups = voucherRows
+            .GroupBy(x => new { x.ReportDate.Year, x.ReportDate.Month })
+            .OrderBy(g => g.Key.Year).ThenBy(g => g.Key.Month)
+            .Select(g =>
+            {
+                var items = g.GroupBy(x => x.Voucher.InventoryId).Select(ig => new ItemAggregate
+                {
+                    InventoryId = ig.Key,
+                    Name = ig.First().Voucher.Inventory?.InventoryName ?? $"Inventory #{ig.Key}",
+                    Quantity = ig.Sum(x => x.Voucher.Quantity),
+                    UnitCost = ig.First().Voucher.Inventory?.Price ?? 0m,
+                    Revenue = ig.Sum(x => x.Voucher.SellPrice * x.Voucher.Quantity),
+                    Cost = ig.Sum(x => (x.Voucher.Inventory?.Price ?? 0m) * x.Voucher.Quantity)
+                }).ToList();
+
+                var revenue = items.Sum(i => i.Revenue);
+                var cost = items.Sum(i => i.Cost);
+
+                return new MonthlyGroup
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    Label = new DateTime(g.Key.Year, g.Key.Month, 1).ToString("MMMM yyyy"),
+                    Revenue = revenue,
+                    Cost = cost,
+                    Profit = revenue - cost,
+                    Items = items
+                };
+            }).ToList();
+    }
+
+    private void ClearFilters()
+    {
+        selectedCustomerId = 0;
+        periodType = "Monthly";
+        monthPickerMonth = DateTime.Today.Month;
+        monthPickerYear = DateTime.Today.Year;
+        startDate = null;
+        endDate = null;
+        groups = null;
+        totalRevenue = totalCost = totalProfit = 0m;
+    }
+
+    private async Task ExportCsv()
+    {
+        if (groups == null || !groups.Any()) return;
+
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine("Group,Item,Quantity,UnitCost,Revenue,Cost,Profit");
+        foreach (var g in groups)
+        {
+            foreach (var it in g.Items)
+            {
+                sb.AppendLine($"\"{g.Label}\",\"{Escape(it.Name)}\",{it.Quantity},{it.UnitCost},{it.Revenue},{it.Cost},{it.Revenue - it.Cost}");
+            }
+        }
+
+        var bytes = System.Text.Encoding.UTF8.GetBytes(sb.ToString());
+        var base64 = Convert.ToBase64String(bytes);
+        await JSRuntime.InvokeVoidAsync("eval", $@"
+            (function(){{
+                const link = document.createElement('a');
+                link.href = 'data:text/csv;base64,{base64}';
+                link.download = 'custom-reports.csv';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }})()
+        ");
+    }
+
+    private static string Escape(string s) => string.IsNullOrEmpty(s) ? string.Empty : s.Replace("\"", "\"\"");
+
+    // small DTOs for UI
+    private class MonthlyGroup
+    {
+        public int Year { get; set; }
+        public int Month { get; set; }
+        public string Label { get; set; } = string.Empty;
+        public decimal Revenue { get; set; }
+        public decimal Cost { get; set; }
+        public decimal Profit { get; set; }
+        public List<ItemAggregate> Items { get; set; } = new();
+    }
+
+    private class ItemAggregate
+    {
+        public int InventoryId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public decimal Quantity { get; set; }
+        public decimal UnitCost { get; set; }
+        public decimal Revenue { get; set; }
+        public decimal Cost { get; set; }
+    }
+
+    [Inject] IJSRuntime JSRuntime { get; set; } = default!;
+}
